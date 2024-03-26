@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>About Us - happie Water Dispenser</title>
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <meta
+      name="description"
+      content="Today, we have worked with over 1000 households and commercial businesses. Find out how we started our journey, from our humble beginnings to where we are now.  "
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      .aboutus-div .nav-blue a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      .aboutus-div .nav-blue a:hover {
+        text-decoration: none;
+        color: var(--blue);
+        cursor: pointer;
+      }
+
+      .aboutus-div .banner-dark {
+        background-color: white;
+        color: var(--grey);
+      }
+
+      /*video style*/
+      .aboutus-video-div {
+        width: 100%;
+        height: 90vh;
+        overflow: hidden;
+      }
+
+      .aboutus-video-div video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This property ensures that the video covers the entire container while maintaining its aspect ratio */
+      }
+
+      /*aboutus description*/
+      .aboutus-description-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2% 0px;
+      }
+
+      .aboutus-description-div h1 {
+        padding: 30px 0px;
+        margin: 0px;
+        font-size: 5vw;
+        color: var(--grey);
+      }
+
+      .aboutus-description {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
+      }
+
+      .aboutus-description-left {
+        width: 50%;
+        padding: 0px 90px;
+        text-align: left;
+      }
+
+      .aboutus-description-right {
+        width: 80%;
+        padding: 0px 50px;
+      }
+
+      .aboutus-description-left h2 {
+        padding: 0px 0px;
+        margin: 0px;
+        font-size: 6vw;
+        color: var(--grey);
+      }
+
+      .aboutus-description-left p {
+        padding: 0px 0px;
+        margin: 0px;
+        font-size: 2vw;
+        color: var(--grey);
+        font-weight: 600;
+      }
+
+      .aboutus-description-right p {
+        font-size: 1.6vw;
+        margin: 0px;
+        line-height: 55px;
+        text-align: justify;
+      }
+
+      /*scroll banner*/
+      .collaboration-scroll-div {
+        width: 100%;
+        height: 8vh;
+      }
+
+      .collaboration-scroll {
+        display: flex;
+        flex-wrap: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0px;
+        box-sizing: border-box;
+        animation: scroll 30s linear infinite;
+        width: 100%;
+      }
+
+      .scroll-item {
+        width: auto;
+        height: 45px;
+        padding: 0px 50px;
+        box-sizing: border-box;
+      }
+
+      .scroll-item img {
+        height: 100%;
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(100%);
+        }
+
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+
+      @media (max-width: 767px) {
+        .aboutus-description {
+          display: none;
+        }
+
+        .aboutus-description {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          padding: 0px 100px;
+          box-sizing: border-box;
+        }
+
+        .aboutus-description-left {
+          width: 100%;
+          text-align: center;
+          box-sizing: border-box;
+        }
+
+        .aboutus-description-right {
+          width: 80%;
+          padding: 20px 0px;
+        }
+
+        .aboutus-description-right p {
+          font-size: 12px;
+          margin: 0px;
+          line-height: 35px;
+          text-align: justify;
+        }
+        .aboutus-description-left h2 {
+          padding: 0px 0px;
+          margin: 0px;
+          font-size: 40px;
+          color: var(--grey);
+        }
+
+        .aboutus-description-left p {
+          padding: 0px 0px;
+          margin: 0px;
+          font-size: 15px;
+          color: var(--grey);
+          font-weight: 600;
+        }
+
+        .scroll-item {
+          width: auto;
+          height: 40px;
+          padding: 0px 50px;
+          box-sizing: border-box;
+        }
+
+        .collaboration-scroll-div {
+          width: 100%;
+          overflow-x: hidden;
+          padding-bottom: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+    </script>
+
+    <div class="aboutus-div">
+      <div class="home-top-2">
+        <div class="banner-dark">
+          <p>
+            [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+            Discounts
+          </p>
+        </div>
+        <div class="nav-blue" style="background-color: transparent">
+          <ul class="nav-pages">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-logo">
+              <a href="index.html"
+                ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+              /></a>
+            </li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul class="subpages">
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul class="subpages">
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-container">
+          <div class="nav-hamburger">
+            <div class="nav-menu">
+              <img src="images/home/home_menu.png" alt="menu logo" />
+              <a class="nav-logo" href="index.html"
+                ><img
+                  src="images/home/happie_logo_blue.png"
+                  alt="Happie Logo Blue"
+              /></a>
+            </div>
+          </div>
+          <ul class="nav-expand">
+            <img
+              class="close-nav"
+              src="images/home/home_menu_close.png"
+              alt="menu close logo"
+            />
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul>
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutus-video-div">
+      <video controls autoplay>
+        <source src="images/home/Aboutus-Happie.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="aboutus-description-div">
+      <h1>About Us</h1>
+
+      <div class="aboutus-description">
+        <div class="aboutus-description-left">
+          <h2>
+            <span class="happie-blue"><b>30 YEARS</b></span>
+          </h2>
+          <p>of experience</p>
+        </div>
+        <div class="aboutus-description-right">
+          <p><b>World's #1 Stealth Technology Technology Water Dispenser</b></p>
+          <p>
+            Our goal has always been the same - to provide quality lifestyle
+            products for every need. With our professional team, we keep up with
+            latest technologies to ensure you will only receive the best.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="collaboration-scroll-div">
+      <div class="collaboration-scroll">
+        <div class="scroll-item">
+          <img src="images/Reviews/tiktok.webp" alt="Tiktok Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/shopee.webp" alt="DBS Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/Grab.png" alt="Grab Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/dbs.webp" alt="Shopee Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/ocbc.webp" alt="OCBC Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/uob.webp" alt="OCBC Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/tiktok.webp" alt="Tiktok Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/shopee.webp" alt="DBS Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/Grab.png" alt="Grab Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/dbs.webp" alt="Shopee Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/ocbc.webp" alt="OCBC Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/uob.webp" alt="OCBC Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/tiktok.webp" alt="Tiktok Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/shopee.webp" alt="DBS Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/Grab.png" alt="Grab Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/dbs.webp" alt="Shopee Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/ocbc.webp" alt="OCBC Logo" />
+        </div>
+        <div class="scroll-item">
+          <img src="images/Reviews/uob.webp" alt="OCBC Logo" />
+        </div>
+      </div>
+    </div>
+
+    <div class="enquiry-div">
+      <div class="enquiry-heading">
+        <h1>
+          <span style="color: #0ba1d5">happie</span>
+          <span style="color: #505251"
+            >Helpdesk: <br />
+            Your Queries, Our Priority!
+          </span>
+        </h1>
+      </div>
+      <div class="enquirymain">
+        <div class="enquirycolumn">
+          <table class="enquiry">
+            <tbody>
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/phone.png"
+                    alt="Contact Happie Phone"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="tel:+6588843083">+65 8884 3083</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/email.png"
+                    alt="Contact Happie Email"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img src="images/Enquiry/location.png" alt="Find Happie" />
+                </td>
+                <td class="enquiry-details-map">
+                  <p>Happie Experiential Showroom Northstar @ AMK <br /></p>
+                  <p>7030 Ang Mo Kio Avenue 5, #03-55 <br /></p>
+                  <p>Singapore 569880</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg"
+                    width="500vw"
+                    height="290vh"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="enquirycolumn">
+          <form action="submit.php" method="post" class="enquiryform">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required /> <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" required /> <br />
+            <label for="message">Message:</label> <br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input
+              type="submit"
+              id="enquirysubmit"
+              value="Send Us a Message!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="Happie Logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

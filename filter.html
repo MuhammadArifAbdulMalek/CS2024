@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bliss Filter for your Tap - happie Water Dispensers</title>
+    <meta
+      name="description"
+      content="Bliss is designed to be an add-on to your home, without intruding on your lifestyle. Adding bliss to your taps allows you to drink freely from it, taking convenience to another level. With  4 Stage Alkaline Filtration System, you can be sure to drink with a peace of mind."
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      body {
+        background-color: #f5f5f5;
+        color: #505251;
+      }
+
+      .filter-buynow-button {
+        border-radius: 30px; /* Adjust the value to control the roundness of the button */
+        background-color: var(
+          --blue
+        ); /* Change the background color as needed */
+        color: #ffffff; /* Change the text color as needed */
+        padding: 10px 40px; /* Adjust padding for better visual appeal */
+        border: none; /* Remove default button border */
+        cursor: pointer;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 2vw;
+      }
+
+      .filter-buynow-button:hover {
+        background-color: #505251; /* Change the background color on hover as needed */
+      }
+
+      .blue-text-big {
+        color: #0ba1d5; /* Blue color for the first word */
+        font-size: 5vw;
+      }
+
+      .blue-text {
+        color: #0ba1d5; /* Blue color for the first word */
+      }
+
+      .black-text {
+        color: #000; /* Black color for the second word */
+      }
+
+      .filter-button {
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%; /* Adjust the max-width as needed */
+      }
+
+      .filter-content {
+        text-align: center;
+        margin: auto;
+        flex: 1;
+        margin-left: 20px; /* Adjust the margin as needed */
+        font-size: 1.5vw;
+        margin-right: 5vw;
+      }
+
+      .filter-image {
+        display: flex;
+        align-items: center;
+        margin: 5vw;
+      }
+
+      .filter-image img {
+        margin: auto;
+      }
+
+      .filter-content p {
+        color: #666;
+        font-size: 1.5vw;
+        text-align: center;
+        margin: auto;
+      }
+
+      .filter-second {
+        margin: 0px 5vw;
+      }
+
+      .filter-second h1 {
+        font-size: 4vw;
+      }
+
+      .filter-second h3 {
+        font-size: 2.5vw;
+        text-align: center;
+      }
+
+      .filter-second p {
+        text-align: center;
+        font-size: 1.5vw;
+      }
+
+      .filter-big-div {
+        display: flex;
+        justify-content: space-between;
+        width: 90vw;
+      }
+
+      .filter-small-div {
+        width: 40vw; /* Adjust the width as needed */
+        padding: 20px;
+        text-align: center;
+      }
+
+      .filter-small-div img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .filter-small-div-arrow {
+        width: 20vw; /* Adjust the width as needed */
+        height: 10vh;
+        text-align: center;
+        font-size: 2vw;
+        margin-top: 30px;
+      }
+
+      .filter-small-div h4 {
+        font-size: 2vw;
+      }
+
+      .filter-small-div p {
+        width: 18vw;
+      }
+
+      .filter-sink {
+        position: relative;
+        width: 100%;
+        height: 50vw; /* Adjust the max-width as needed */
+        margin: 0 auto;
+        margin-bottom: 30px;
+      }
+
+      .filter-sink p {
+        font-size: 1.5vw;
+        margin-bottom: 20px;
+      }
+
+      .filter-image-container {
+        position: relative;
+        width: 100%;
+        height: 100%; /* Adjust the height as needed */
+        background: url("images/filter/filter-sink.jpg") center/cover no-repeat; /* Replace 'your-image-url.jpg' with your image URL */
+        border-radius: 10px;
+      }
+
+      .filter-text-overlay {
+        position: absolute;
+        top: 50%;
+        margin-left: 20vw;
+        margin-right: 20vw;
+        transform: translateY(-50%);
+        width: 60vw;
+        text-align: center;
+        color: #fff;
+        font-size: 3vw;
+      }
+
+      .line {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .line:first-child {
+        text-align: left;
+      }
+
+      .line.second {
+        text-align: right;
+      }
+
+      .line.middle {
+        text-align: center;
+      }
+
+      .filter-last {
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+
+      .filter-last h1 {
+        font-size: 4vw;
+      }
+
+      .filter-last h3 {
+        font-size: 2vw;
+      }
+
+      .phrase-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px; /* Adjust the max-width as needed */
+        margin: 20px auto;
+        text-align: center;
+        font-size: 2vw;
+      }
+
+      .phrase {
+        width: 48%; /* Adjust the width as needed */
+        text-align: left; /* You can also use "right" for the right phrase */
+      }
+      .phrase-second {
+        width: 48%; /* Adjust the width as needed */
+        text-align: right; /* You can also use "right" for the right phrase */
+      }
+
+      .filter-big-div2 {
+        display: none;
+      }
+
+      @media (max-width: 800px) {
+        .filter-big-div {
+          display: none;
+        }
+
+        .filter-button {
+          background-color: #ffffff;
+          display: inline;
+          align-items: center;
+          justify-content: center;
+          max-width: 80vw; /* Adjust the max-width as needed */
+          margin-bottom: 20px;
+        }
+
+        .filter-buynow-button {
+          font-size: 14px;
+        }
+
+        .filter-content {
+          text-align: center;
+          margin-top: 5vw;
+        }
+
+        .filter-content h1 {
+          font-size: 30px;
+        }
+
+        .filter-content p {
+          font-size: 16px;
+          text-align: center;
+          margin: auto;
+          padding: 0px 30px;
+        }
+
+        .filter-second {
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+
+        .filter-second h1 {
+          font-size: 30px;
+        }
+        .filter-second h3 {
+          font-size: 30px;
+        }
+
+        .filter-second p {
+          text-align: center;
+          font-size: 16px;
+          padding: 0px 20px;
+        }
+
+        .filter-big-div2 {
+          display: inline;
+          align-items: center;
+          justify-content: center;
+          padding-bottom: 30px;
+        }
+
+        .filter-small-div2 {
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .filter-small-div2 img {
+          margin: auto;
+          border-radius: 8px;
+        }
+
+        .filter-small-div2 h4 {
+          font-size: 30px;
+          text-align: center;
+        }
+
+        .filter-small-div2 p {
+          font-size: 16px;
+          text-align: center;
+        }
+
+        .filter-text-overlay {
+          position: absolute;
+          top: 50%;
+          margin-left: 20vw;
+          margin-right: 20vw;
+          transform: translateY(-50%);
+          width: 60vw;
+          text-align: center;
+          color: #fff;
+          font-size: 20px;
+        }
+
+        .filter-last {
+          margin: auto;
+          text-align: center;
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+
+        .filter-last h1 {
+          font-size: 30px;
+        }
+
+        .filter-last h3 {
+          font-size: 20px;
+        }
+
+        .phrase-container {
+          display: flex;
+          justify-content: space-between;
+          width: 80vw;
+          margin: 20px auto;
+          text-align: center;
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+    </script>
+    <div class="home-top">
+      <img
+        class="background"
+        style="opacity: 120%"
+        src="images/filter/filter_head.jpg"
+        alt="Happie Filter"
+      />
+      <div class="banner">
+        <p>
+          [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+          Discounts
+        </p>
+      </div>
+      <div class="nav-light">
+        <ul class="nav-pages">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-logo">
+            <a href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+            /></a>
+          </li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul class="subpages">
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul class="subpages">
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="subpage-header">
+        <h1>BLISS</h1>
+        <p>Your extension to your tap for healthier drinking water</p>
+        <a href="cart.html"
+          ><button class="filter-buynow-button">Buy Now</button>
+        </a>
+      </div>
+
+      <div class="nav-container">
+        <div class="nav-hamburger">
+          <div class="nav-menu">
+            <img src="images/home/home_menu.png" alt="menu logo" />
+            <a class="nav-logo" href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+            /></a>
+          </div>
+        </div>
+        <ul class="nav-expand">
+          <img
+            class="close-nav"
+            src="images/home/home_menu_close.png"
+            alt="menu close logo"
+          />
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul>
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="filter-button">
+      <div class="filter-image" data-aos="zoom-in">
+        <img src="images/filter/filter_1.png" alt="Happie Filter 1" />
+      </div>
+      <div class="filter-content">
+        <h1>
+          <span class="blue-text-big">BLISS</span>
+          Under sink Filter
+        </h1>
+        <p>
+          Our 4-Stage Alkaline Undersink Filtration System is an extension to
+          your tap that provides you healthy and clean drinking water. This
+          filtration systems is a guarantee that you are drinking clean water,
+          leaving you feeling refreshed and satisfied! Drinking or cooking with
+          filtered water from your own sink couldn't be any easier!
+          <br /><b>*Includes 24 months warranty</b>
+        </p>
+        <a href="cart.html"
+          ><button class="filter-buynow-button">Buy Now</button></a
+        >
+      </div>
+    </div>
+
+    <div class="filter-second" data-aos="fade-in">
+      <h1>
+        Why
+        <span class="blue-text">BLISS</span>
+        ?
+      </h1>
+      <h3>Extensive Filtration</h3>
+      <p>
+        Our 4 Stage Alkaline Filtration System removes 99.9% of sediments
+        including dirt, germs, rust and impurities. <br />
+        Removing organic chemicals such as chlorine contents and odour.
+      </p>
+      <div class="filter-big-div">
+        <div
+          class="filter-small-div"
+          data-aos="slide-up"
+          data-aos-duration="500"
+        >
+          <img src="images/filter/filter-no1.png" alt="Happie Stage 1" />
+          <h4>
+            Sediment <br />
+            Filter
+          </h4>
+          <p>
+            Maximises the water <br />
+            purification effect from initial stage<br />
+            by completely removing <br />
+            all sediments including rust, <br />
+            dirt, sand and microscopic impurities.
+          </p>
+        </div>
+        <div class="filter-small-div-arrow">&#8594;</div>
+        <div
+          class="filter-small-div"
+          data-aos="slide-up"
+          data-aos-duration="1000"
+        >
+          <img src="images/filter/filter-no2.png" alt="Happie Stage 2" />
+          <h4>
+            Pre Carbon <br />
+            Filter
+          </h4>
+          <p>
+            Carbon filter uses <br />
+            granular activated <br />
+            carbon that makes water <br />
+            close to natural <br />
+            by absorbing and <br />
+            removing organic <br />
+            chemical such as <br />
+            chlorine contents and odour.
+          </p>
+        </div>
+        <div class="filter-small-div-arrow">&#8594;</div>
+        <div
+          class="filter-small-div"
+          data-aos="slide-up"
+          data-aos-duration="2000"
+        >
+          <img src="images/filter/filter-no3.png" alt="Happie Stage 3" />
+          <h4>
+            Ultra Filtration <br />
+            Filter
+          </h4>
+          <p>
+            Microscopic ultrafiltration <br />
+            filter allow the passage of <br />
+            only clean water <br />
+            containing mineral <br />
+            contents after removing <br />
+            99.9% of the bacteria,<br />
+            germs and virus in the water.
+          </p>
+        </div>
+        <div class="filter-small-div-arrow">&#8594;</div>
+        <div
+          class="filter-small-div"
+          data-aos="slide-up"
+          data-aos-duration="2500"
+        >
+          <img src="images/filter/filter-no4.png" alt="Happie Stage 4" />
+          <h4>
+            Nano pH <br />
+            Filter
+          </h4>
+          <p>
+            Natural alkaline filter <br />
+            increases hydrogen ion <br />
+            concentration & provide <br />
+            water of lower oxidation <br />
+            reduction potential. It <br />
+            also decreases the size of <br />
+            water molecule clusters <br />
+            for better hydration and detoxification.
+          </p>
+        </div>
+      </div>
+
+      <div class="filter-big-div2">
+        <div class="filter-small-div2" data-aos="ease-in">
+          <img src="images/filter/filter-no1.png" alt="Happie Stage 1" />
+          <h4>
+            Sediment <br />
+            Filter
+          </h4>
+          <p>
+            Maximises the water <br />
+            purification effect from initial stage<br />
+            by completely removing <br />
+            all sediments including rust, <br />
+            dirt, sand and microscopic impurities.
+          </p>
+        </div>
+        <div class="filter-small-div2" data-aos="ease-in">
+          <img src="images/filter/filter-no2.png" alt="Happie Stage 2" />
+          <h4>
+            Pre Carbon <br />
+            Filter
+          </h4>
+          <p>
+            Carbon filter uses <br />
+            granular activated <br />
+            carbon that makes water <br />
+            close to natural <br />
+            by absorbing and <br />
+            removing organic <br />
+            chemical such as <br />
+            chlorine contents and odour.
+          </p>
+        </div>
+        <div class="filter-small-div2" data-aos="ease-in">
+          <img src="images/filter/filter-no3.png" alt="Happie Stage 3" />
+          <h4>
+            Ultra Filtration <br />
+            Filter
+          </h4>
+          <p>
+            Microscopic ultrafiltration <br />
+            filter allow the passage of <br />
+            only clean water <br />
+            containing mineral <br />
+            contents after removing <br />
+            99.9% of the bacteria,<br />
+            germs and virus in the water.
+          </p>
+        </div>
+        <div class="filter-small-div2" data-aos="ease-in">
+          <img src="images/filter/filter-no4.png" alt="Happie Stage 4" />
+          <h4>
+            Nano pH <br />
+            Filter
+          </h4>
+          <p>
+            Natural alkaline filter <br />
+            increases hydrogen ion <br />
+            concentration & provide <br />
+            water of lower oxidation <br />
+            reduction potential. It <br />
+            also decreases the size of <br />
+            water molecule clusters <br />
+            for better hydration and detoxification.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-sink">
+      <div class="filter-image-container">
+        <div class="filter-text-overlay">
+          <h1><span class="line">Fits</span></h1>
+          <h1><span class="line second">Any</span></h1>
+          <h1><span class="line middle">Space</span></h1>
+          <p>*Non drilling option available</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-last">
+      <h1>
+        <span class="blue-text">Save</span>
+        up on electricity bill
+      </h1>
+      <div class="phrase-container" data-aos="fade-in">
+        <div class="phrase">
+          <h3>
+            <span class="blue-text">No</span>
+            Electricity Needed
+          </h3>
+        </div>
+        <div class="phrase-second">
+          <h3>
+            <span class="blue-text">No</span>
+            Boiling Required
+          </h3>
+        </div>
+      </div>
+      <h3 data-aos="fade-in">
+        <span class="blue-text">99.9%</span>
+        Germs Removed
+      </h3>
+      <a href="cart.html"
+        ><button class="filter-buynow-button">Buy Now</button></a
+      >
+    </div>
+
+    <div class="enquiry-div">
+      <div class="enquiry-heading">
+        <h1>
+          <span style="color: #0ba1d5">happie</span>
+          <span style="color: #505251"
+            >Helpdesk: <br />
+            Your Queries, Our Priority!
+          </span>
+        </h1>
+      </div>
+      <div class="enquirymain">
+        <div class="enquirycolumn">
+          <table class="enquiry">
+            <tbody>
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/phone.png"
+                    alt="Contact Happie Phone"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="tel:+6588843083">+65 8884 3083</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/email.png"
+                    alt="Contact Happie Email"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img src="images/Enquiry/location.png" alt="Find Happie" />
+                </td>
+                <td class="enquiry-details-map">
+                  <p>Happie Experiential Showroom Northstar @ AMK <br /></p>
+                  <p>7030 Ang Mo Kio Avenue 5, #03-55 <br /></p>
+                  <p>Singapore 569880</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg"
+                    width="500vw"
+                    height="290vh"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="enquirycolumn">
+          <form action="submit.php" method="post" class="enquiryform">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required /> <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" required /> <br />
+            <label for="message">Message:</label> <br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input
+              type="submit"
+              id="enquirysubmit"
+              value="Send Us a Message!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="Happie Logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

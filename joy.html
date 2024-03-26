@@ -1,0 +1,1235 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-RD7LZYTHVP');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Joy Dispenser for your Home - happie Water Dispenser</title>
+    <meta name="description" content="Joy is built to be your hydration companion in your homes. Top-notch technology to ensure every sip is packed with hydration and vitality. " />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico">
+    <style>
+
+body {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        
+        .home-header p {
+            font-size:2.8vh;
+            color:white;
+            text-align: center;
+        }
+
+        .page{
+            
+            height:auto;
+            position: relative;
+            z-index:1;
+        }
+
+        .pagewrapper{
+            margin: 0px 5vw;
+            padding: 5vh 0;
+            height:auto;
+        }
+        .pagewrapperimages{
+            display: flex;
+            min-height: 100vh;
+            
+            padding: 0 5vh;
+            
+        }
+
+       
+        .pagewrapper-product{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+           
+            background-color: #818181;
+            
+        }
+        .pagetitle {
+            display:flex;
+        }
+
+        .pagetitle h1{
+            font-size: 7vh;
+            color:#505251;
+            margin-top:10px;
+            margin-bottom:5vh;
+            font-family: 600;
+        }
+
+        .name{
+            font-size:5vw;
+        }
+
+        .dispensermain{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:5vw;
+        }
+
+        .dispenserproducts{
+            position: relative;
+            width: 20vh;
+            height: 20vh;
+            display: none;
+            height:50vh;
+            width:50vh;
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-position: center center;
+        }
+
+        .dispenserproducts.visible {
+            display: block;
+            height:50vh;
+            width:50vh;
+            padding:0px 10vh 10vh 0px;
+            background-position: right;
+        
+        } 
+
+        .dispenserdetails p{
+            font-size: 1.5vw;
+            line-height: 2em;
+            color:#505251;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .productview{
+            flex: 1;
+        }
+
+
+        .productpurchase {
+            flex: 2;
+            margin-right: 10vw;
+            margin-left:10px;
+        }
+
+        .dispenserprice{
+            text-align: center;
+        }
+        .dispenserprice span{
+            font-size: 3.5vh;
+            padding:0px 10px;
+            font-weight: 400;
+        }
+        
+        #dispenserbutton {
+            padding:25px 25px 25px 25px;
+            margin-top:10px;
+            margin-right:20px;
+            font-size:1.3vw;
+            border-radius: 44px;
+            width:12vw;
+        }
+
+        #dispenserbuttondimensions {
+            padding:25px 25px 25px 25px;
+            margin-top:10px;
+            margin-right:20px;
+            font-size:3.5vh;
+            border-radius: 44px;
+            min-width:256px;
+        } 
+
+        .coloravailability{
+            padding-right: 0px;
+        }
+
+        .coloravailability p{
+            font-weight: 600;
+            font-size:2vw;
+        }
+
+        .coloravailability img{
+            margin: 10px 10px;
+            
+        }
+        
+        .stealth {
+            display: flex;
+            align-items: center;
+            height: auto;
+            justify-content: space-between;
+            padding-bottom:5vh;
+            
+        }
+
+        .stealthimage {
+            position:absolute;
+            right:19vw;
+        }
+
+        .stealthvideos{
+            padding-top: 3vh;
+        
+        }
+        .stealthvideos video{
+            width: 22vw;
+            height: auto;
+            padding-right: 20px;
+            order: 0;
+            min-width:200px;
+        }
+
+        .stealth p {
+            flex:1;
+            font-size: 1.5vw;
+            text-align: center;
+            width: 25vw;
+            height: 25vw;
+            display: flex; 
+            align-items: center;
+            margin: 0 5vw;
+        }
+
+        .joyadjustablecontainer{
+            display:flex;
+
+            padding-top:20px;
+        }
+
+        .dispenservideo {
+            flex:1;
+            float:right;
+            padding-right:30px;
+        }
+
+        .dispenservideo video{
+            width:40vw;
+            height:auto;
+            float:right;
+        }
+
+        .dispenserdetails{
+            flex:1;
+        }
+        .dispenserdetails img{
+            padding-right:30px;
+            padding-left:30px;
+            
+            
+        }
+
+
+        .temperaturedetails {
+            text-align: center;
+        }
+        
+
+        .temperature1 img{
+            position:absolute;
+            bottom:0px;
+            left:0px;
+            z-index: -1;
+            width:30vw;
+            height:auto;
+        }
+
+        .temperature2 img, .voiceimage img{
+            position:absolute;
+            bottom:0px;
+            right:0px;
+            z-index: -1;
+            width:30vw;
+            height:auto;
+        }
+
+        .temperaturedetails p{
+            font-size: 3vh;
+            font-weight:400;
+            line-height:2.2em;
+        }
+
+        .voice{
+            display:flex;
+            width:60vw;
+            padding-top:5vh;
+        }
+        .voice img {
+            padding-top:10px;
+            padding-bottom:10px;
+        }
+
+        #voiceimage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #voicepage{
+            min-height: 100vh;
+        }
+        
+
+        
+
+        .filterreplacement{
+            flex:2;
+           text-align: right;
+        }
+
+        .filterreplacement img{
+            width: 35vw;
+        }
+
+        
+        .filterreplacementdetailscontainer{
+            flex:3;
+            height:100vh;
+            
+
+        }
+
+        .filterreplacementcontainer{
+            display:flex;
+        }
+        .filterreplacementdetails{
+            flex:1;
+            padding-right:2vw;
+        }
+        .filterreplacementcontainer h1{
+            font-size:7vh;
+            margin-bottom:10px;
+            margin-top:10px;
+        }
+
+
+        .filterreplacementcontainer p{
+            font-size:2.5vh;
+            line-height: 1.7em;
+        }
+
+        .filterreplacementcontainervideo{
+            flex:1;
+            
+        }
+
+        .filterreplacementcontainervideo video{
+            min-height:200px;
+            min-width: 200px;
+            width:20vw;
+            height:auto;
+        }
+
+        
+
+        .pagewrapper-product{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            
+            background-color: #818181;
+            
+        }
+
+        .productdimensiontitle{
+            
+            margin-left:10vw;
+            padding-top: 20px;
+            flex:2;
+            text-align: right;
+
+        }
+
+        .productdimension{
+            position:relative;
+            flex:2;
+            height:auto;
+        
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 3s, transform 3s;
+        }
+
+        .productdimension.fade-in {
+            position:relative;
+            flex:2;
+            height:auto;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .temphot{
+            opacity: 0;
+            transition: opacity 3s;
+        }
+
+        .tempcold{
+            opacity: 0;
+            transition: opacity 5s;
+        }
+
+        .tempambient{
+            opacity: 0;
+            transition: opacity 7s;
+        }
+
+        .temphot.fade-in, .tempcold.fade-in, .tempambient.fade-in{
+            opacity: 1;
+        }
+
+       
+
+        #joyproduct{
+            position:absolute;
+            top: 50%;
+            left: 150px;
+            transform: translate(0%, -40%);
+        }
+
+        .whyjoy{
+            text-align: left;
+        }
+
+        .whyjoy h1{
+           font-size: 7vh;
+           
+        }
+        
+
+        .dispensersnout p{
+                 
+                font-size: 1.5vw;
+                color:white; 
+                text-align: center; 
+                line-height: 1.7em;
+                font-weight:500;
+                margin: 5vh;
+        }
+        .dispenserdetailsimages, .dispenserdetails{
+            min-width: 250px;
+            text-align:center;
+            
+        }
+        .dispensersnout{
+            min-width: 250px;
+        }
+
+
+        .dispenserdetailsimages img{
+            min-width: 120px;
+            width: 15vw;
+        }
+
+        .joycolors img{
+            width:5vw;
+            height:auto;
+        }
+
+        .pagetitle img{
+            width:15vw;
+            height:auto;
+            min-width: 180px;
+            min-height: 180px;
+        }
+        
+        .productdimension{
+            position:relative;
+            flex:3;
+            height:auto;
+        
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 3s;
+        }
+
+        .productdimension img {
+            width:41.5vh;
+            
+        }
+
+        .pagetitleh1{
+            font-size:3.5vw;
+            
+        }
+
+        .productdimension.visible {
+            position:relative;
+            flex:3;
+            height:auto;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .pagewrapper h1{
+            font-size:8vh;
+        }
+        .pagewrapper-product{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            min-height: 100vh;
+            background-color: #818181;
+            
+        }
+
+        .pagewrappercenter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            
+            
+        }
+
+        .voicerep{
+            display:flex;
+            flex-direction: column;
+        }
+        
+        .voicerep img{
+            width:33vw;
+        }
+
+        .pagewrappercenter div{
+            padding-left:1.5vw;
+            padding-right:1.5vw;
+        }
+
+       
+        .filterreplacementheader {
+            padding-top: 10vh;
+            margin-right:5vw;
+        }
+
+        .voiceimage img{
+                min-height: 400px;
+                height:80vh;
+                width:auto;
+            }
+
+        .temptext{
+            text-align: center; 
+            padding-top:20px; 
+            margin:0 3vw;
+        }
+
+        .productdimensiontitlename h1 {
+            font-size: 8vh;
+        }
+
+        @media (max-width:1230px){
+            .dispenservideo {
+                float:none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                padding-right:0px;
+                padding-bottom:5vh;
+                min-width:200px;
+            }
+
+            .joyadjustablecontainer{
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width:1000px){
+            .pagewrapperimages{
+                flex-direction: column;
+            }
+
+            .filterreplacement{
+                float:none;
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            .filterreplacementdetailscontainer{
+                text-align: center;
+                padding-top:10px;
+            }
+
+            .filterreplacementheader h1, .filterreplacementheader {
+                margin-block-start: 0px;
+                padding-top:0px;
+            }
+
+            .filterreplacementcontainervideo video{
+                width:70%;
+                float:left;
+
+            }
+
+            .filterreplacementdetails{
+                flex:3;
+               
+            }
+
+            .filterreplacementdetails p{
+                margin-top: 0;
+            }
+
+            .filterreplacementcontainervideo{
+                flex:2;
+
+            }
+
+            .filterreplacementcontainer{
+                padding-bottom:10vh;
+            }
+
+            .pagewrapper-product{
+                flex-direction: column;
+            }
+
+            .productdimensiontitle{
+                margin-left:0;
+                text-align: center;
+               
+            }
+
+            #joyproduct{
+                position:relative;
+                top:auto;
+                left:auto;
+                transform: translate(-15%, 0%);
+            }
+
+            .productdimension.fade-in.visible,.productdimension.visible{
+                padding:5vh 0 ;
+            }
+
+            .stealthimage{
+                display:none;
+            }
+
+            .stealth{
+                flex-direction: column;
+            }
+
+            .stealth p{
+                font-size: 2.5vw;
+                padding-top:5vh;
+                width:80%;
+            }
+
+            .whyjoy{
+                text-align:center;
+            }
+
+            .pagetitleh1 {
+                text-align: center;
+                font-size: 4.5vh;
+
+            }
+
+            #whyjoy{
+                padding:0;
+            }
+
+            .dispensersnout p{
+                font-size:2vh;
+            }
+
+            #title3{
+                font-size:2.5vh;
+            }
+
+            .dispenserdetails p {
+                font-size: 2.5vw;
+            }
+           
+            .subpage-header h1{
+                font-size:8vh;
+            }
+
+            .subpage-header p{
+                font-size:2.5vh;
+                text-align:center;
+            }
+
+            .dispenserprice span{
+                font-size:2.5vw;
+            }
+
+            .dispenservideo video{
+                float:none;
+            }
+        }
+
+        @media (max-width:840px){
+            .voicerep img{
+                width:60vw;
+                min-width: 360px;
+            }
+
+            .filterreplacementcontainer{
+                flex-direction: column;
+            }
+
+            .filterreplacementcontainervideo video{
+                float:none;
+            }
+
+            .dispensermain{
+                flex-direction: column;
+            }
+
+            .productpurchase{
+                margin: 0 5vw;
+            }
+
+            .name{
+                font-size:8vh;
+                margin: 0px;
+            }
+
+            .pagewrapper h1,  .temptext h1,  .filterreplacementheader h1{
+                font-size:40px;
+            }
+
+            #joyproduct{
+                max-width: 80vw;
+            }
+
+        }
+    </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navMenu = document.querySelector('.nav-menu');
+        var navHamburger = document.querySelector('.nav-hamburger');
+        var navExpand = document.querySelector('.nav-expand');
+        var closeIcon = document.querySelector('.close-nav');
+
+        navMenu.addEventListener('click', function() {
+            navExpand.style.display = 'block';
+            navHamburger.style.display = 'none';
+        });
+
+        closeIcon.addEventListener('click', function() {
+            navExpand.style.display = 'none'; 
+            navHamburger.style.display = 'block';
+        });
+    });
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+       
+        const unnieButtons = document.getElementById("unnieButton");
+        const oppaButtons = document.getElementById("oppaButton");
+
+        function nextButton(){
+            const currentProduct = document.querySelector(".dispenserproducts.visible");
+            const nextProduct = currentProduct.nextElementSibling;
+
+            if (nextProduct && nextProduct.id === "product2")  {
+                currentProduct.classList.remove("visible");
+                nextProduct.classList.add("visible");
+                }
+        }
+        
+        
+        oppaButtons.addEventListener("click", nextButton);
+       
+        function backButton(){
+            const currentProduct = document.querySelector(".dispenserproducts.visible");
+            const nextProduct = currentProduct.previousElementSibling;
+
+            if (nextProduct) {
+                currentProduct.classList.remove("visible");
+                nextProduct.classList.add("visible");
+            }
+        }
+        
+        
+        unnieButtons.addEventListener("click", backButton);
+
+    });
+</script>
+<script>
+    function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function handleScroll(classNames) {
+        classNames.forEach((className) => {
+            const elements = document.querySelectorAll('.' + className);
+
+            elements.forEach((element) => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('fade-in');
+                }
+            });
+        });
+    }
+
+
+// Initial check on page load
+handleScroll(['productdimension', 'temphot', 'tempcold', 'tempambient']);
+
+
+// Listen for scroll events
+window.addEventListener('scroll', () => {
+    handleScroll(['productdimension', 'temphot', 'tempcold', 'tempambient']); // Array of class names
+    });
+</script>
+</head>
+<body>
+    
+    <div class="home-top">
+        
+            <img class="background" src="images/Joy/joydispenser.png" alt="Happie Joy Dispenser">
+            <div class="banner">
+                <p>[Limited-time] Free 12-months Supply of Filter Sets + Up to 50% Discounts</p>
+            </div>
+            <div class="nav-light">
+                <ul class="nav-pages">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-logo"><a href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul class="subpages">
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul class="subpages">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+        
+            <div class="subpage-header">
+                <h1>JOY</h1>
+                <p>Your choice for an elegant and functional water source in your homes</p>
+                <a href="cart.html"><button class="filter-buynow-button" id="purchasebutton">Buy Now</button></a>
+            </div> 
+
+            <div class="nav-container">
+                <div class="nav-hamburger">
+                    <div class="nav-menu">
+                        <img  src="images/home/home_menu.png" alt="menu logo">
+                        <a class="nav-logo" href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a>
+                    </div>
+                    
+                </div>
+                <ul class="nav-expand">
+                    <img class="close-nav" src="images/home/home_menu_close.png" alt="menu close logo">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul >
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="services.html">Services</a>
+                        <ul >
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="page" id="unnieproduct" style="background-color: #ffffff;">
+        <div class="pagewrapper" id="delightmain">
+            <div class="dispensermain">
+                <div class="productview">
+                    <div id="product1" class="dispenserproducts visible" style="background-image: url(images/Joy/joyunnie.png); background-repeat: no-repeat;">
+                        
+                    </div>
+                
+                    <div id="product2" class="dispenserproducts" style="background-image: url(images/Joy/Joy\ Oppa.png); background-repeat: no-repeat;">
+                       
+                    </div>
+    
+                    <div class="coloravailability" style="text-align: center">
+                        <p> Available in:</p>
+                        <div class="joycolors">
+                            <img src="images/Joy/joyunniecolor.png" title="White" id="unnieButton" alt="Happie White Colour">
+                            <img src="images/Joy/joyoppacolor.png" title="Titanium Grey" id="oppaButton" alt="Happie Titanium Grey Colour">
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="productpurchase">
+                    <div style="text-align: center;">
+                        <h1><span  class="name"style="color: #0BA1D5;">JOY</span> <span  style="color: #505251;  font-size: 5.2vh;">Water Purifier </span><br>
+                    </div>
+                    <div class="dispenserdetails">
+                        <p>
+                            Happie is bringing JOY to you!
+This slim and elegant water purifier is the perfect choice to enhance your homes. Bringing minimal disruption to your interior but offering premium clean drinking water, Happie's Joy Water Purifier ensures a healthy sip for you and your loved ones’s health instantly.
+                        <br><b>*Includes 1 year FREE supply of filters and 36 months warranty</b>
+
+                        </p>
+                    </div>
+                    <div class="dispenserprice">
+                        <span style="color:#000000;"> <s> $1288</s> </span> <span style="color:#0BA1D5;"> $888 </span>
+                    </div>
+                    <div style="text-align: center;">
+                        <form action="cart.html">
+                            <a href="cart.html"><button class="filter-buynow-button" id="productbutton">Buy Now</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    <div class="page" style="background-color: #ffffff;">
+        <div class="pagewrapper" id="whyjoy">
+            <div class="whyjoy" >
+                <h1 style="margin-bottom:10px; color: #505251;">Why <span  style="color: #0BA1D5; ">JOY </span>?</h1>
+            </div>
+            <div class="pagetitle" id="title3">
+                <div style="flex:7; margin-bottom: 0vh;">
+                    <p class="pagetitleh1" >
+                        Patented STEALTH <br>
+                        Electrolysis Technology
+                    </p>
+                </div>
+                <div style="flex: 4;" class="stealthimage">
+                    <img src="images/Joy/stealthtech.png" alt="Happie STEALTH" >
+                </div>
+            </div>
+            <div class="stealth">
+                <div class="stealthvideos">
+                    <video width="360" height="360" controls autoplay loop>
+                        <source src="images/Joy/sterilise1.mp4" type="video/mp4">
+                    </video>
+                    <video width="360" height="360" controls autoplay loop>
+                        <source src="images/Joy/sterilise2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <p>
+                    All water channels as well as filters are washed and sterilised closely with electrolysis sterilising water.
+                </p>        
+            </div>
+            
+        </div>
+    </div>
+    <div class="page" style="background-color: #818181;">
+        <div class="pagewrapper">
+            <div class="snout" style="text-align: center;">
+                <h1><span style="color: white;">Suitable for all sizes</span> </h1>
+                <p><span  style="color: white; font-size: 3vh;">Adjustable faucet to suit different heights</span></p> 
+            </div>
+            <div class="joyadjustablecontainer">
+                <div class="dispenservideo">
+                    <video width="560" height="560" controls autoplay loop >
+                        <source src="images/Joy/dispense.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="dispenserdetails">
+                    <div class="dispenserdetailsimages">
+                        <img src="images/Joy/dispense1.png" title="Extended" alt="Happie Extended Faucet">
+                        <img src="images/Joy/dispense2.png" title="Retracted" alt="Happie Retracted Faucet">
+                    </div>
+                    <div class="dispensersnout">
+                        <p>
+                            Rust Free, Stainless Steel Pipe provide you with the convenience you need, allowing you to adjust to the height of your choice. Rest assured for a mess-free water dispense.
+                            <br> <br>Suitable for cups and bottles of all sizes.
+                        </p>   
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        </div>
+    </div>
+
+    
+    <div class="page"  style="overflow:hidden">
+        <div class="temptext" >
+            <h1 style="margin-bottom:10px; color: #505251;"> <span  style="color: #0BA1D5; ">Six</span> Temperature Controls</h1>
+        </div>
+        
+        <div class="temperaturedetails">
+            <div class="temperature1">
+                <img src="images/Joy/unnietemperature.png" id="unnietemperature" alt="Happie Unnie White"> 
+            </div>
+                        
+            <p>
+                <strong><span style="color:red">  Hot water </span> </strong><br>
+                45°C <br>
+                75°C <br>
+                85°C <br> <br>
+                
+                <strong> <span style="color:#0BA1D5"> Ice cold  (2 Levels) </span> </strong><br>
+                Up to 4°C <br> <br>
+                
+                <strong>Ambient  </strong> <br> 
+                27°C<br>
+            </p>
+            
+            <div class="temperature2">
+                <img src="images/Joy/oppatemperature.png" id="oppatemperature" alt="Happie Oppa Titanium Grey">
+            </div>
+        </div>
+    </div>
+
+    <div class="page" style="background-color: #818181;"  id="voicepage">
+        <div class="voiceimage">
+            <img src="images/Joy/voiceguide.png" id="voicedispenser">
+        </div>
+        <div class="pagewrapper">
+            <div>
+                <h1><span style="color: white;">LED Display. <br>
+                    Paired With Voice Guide.</span> </h1>
+            </div>
+            <div class="voice">
+                <div style="flex:1" id="voiceimage">
+                    <img src="images/Joy/Voice-01 1.png">
+                </div>
+                <div class="voicerep" style="flex:8">
+                    <div>
+                        <img src="images/Joy/Hot Temperature.png" class="temphot" alt="Happie Hot Command"> 
+                    </div>
+                   <div>
+                    <img src="images/Joy/Cold Temperature.png" class="tempcold" alt="Happie Cold Command">
+                   </div>
+                    <div>
+                        <img src="images/Joy/Ambient Temperature.png" class="tempambient" alt="Happie Ambient Command">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" style="background-color: white;">
+        <div class="pagewrapperimages">
+            <div class="filterreplacement">
+                <img src="images/Joy/filterreplacement.png" alt="Happie Joy Filter Replacement">
+            </div>
+            <div class="filterreplacementdetailscontainer">
+                <div class="filterreplacementheader">
+                    <h1><span style="color: #0BA1D5;">Easy</span> <span style="color: #505251;">Filter Replacement</span> </h1>
+                </div>
+                <div class="filterreplacementcontainer">
+                    <div class="filterreplacementdetails">
+                     <p>
+                        Here are 4 Simple steps to replace the filters: <br>
+                        Step 1: Flip up the lever of the filter<br>
+                        Step 2: Remove the filter<br>
+                        Step 3: Insert a new filter<br>
+                        Step 4: Lower down the lever of the filter until it 'clicks'<br>
+                        ​<br>
+                        *Do ensure not to swap the positions of the two filters.
+                    </p> 
+                    </div>
+                    <div class="filterreplacementcontainervideo">
+                        <video width="300" height="300" controls autoplay loop>
+                            <source src="images/Joy/changefilter.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+       
+    <div class="pagewrapper-product" id="oppadimensions">
+        <div class="productdimensiontitle">
+            <div class="productdimensiontitlename">
+                <h1><span style="color: white; ">Slim. </span><br>
+                    <span style="color: black; ">Elegant. </span> <br>
+                    <span style="color: white; ">Perfect for <br>
+                        home. <br> </span>
+                </h1>
+            
+                <a href="cart.html">
+                    <a href="cart.html"><button class="filter-buynow-button" id="purchasedimensionbutton">Buy Now</button></a>
+                    </a>
+            </div>
+            
+        </div>
+        <div class="productdimension">
+            <img src="images/Joy/dimensionproduct.png" id="joyproduct" alt="Happie Joy Dispenser">
+        </div>
+    </div>
+    
+        <div class="pagewrappercenter">
+            <div class="enquiry-div">
+                <div class="enquiry-heading">
+                    <h1><span style="color: #0BA1D5;">happie</span> <span  style="color: #505251;">Helpdesk: <br>
+                    Your Queries, Our Priority! </span></h1>
+                </div>
+                <div class="enquirymain">
+                    <div class="enquirycolumn">
+                        <table class="enquiry">
+                            <tbody>
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/phone.png" alt="Contact Happie Phone">
+                                    </td>
+                                    <td class="enquiry-details">
+                                        <a href="tel:+6588843083">+65 8884 3083</a>
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/email.png" alt="Contact Happie Email">
+                                    </td>
+                                    <td class="enquiry-details">
+                                        <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/location.png" alt="Find Happie">
+                                    </td>
+                                    <td class="enquiry-details-map">
+                                        <p>Happie Experiential Showroom Northstar @ AMK <br> </p>
+                                        <p>7030 Ang Mo Kio Avenue 5, #03-55 <br> </p>    
+                                        <p>Singapore 569880</p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg" width="500vw" height="290vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="enquirycolumn">
+                        <form action="submit.php" method="post" class="enquiryform">
+                            <label for="name">Name:</label> <br>
+                            <input type="text" id="name" name="name" required> <br>
+                            <label for="email">Email:</label> <br>
+                            <input type="email" id="email" name="email" required> <br>
+                            <label for="message">Message:</label> <br>
+                            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                            <input type="submit" id="enquirysubmit" value="Send Us a Message!">
+                        </form>
+                    </div>
+                </div>
+                 </div>
+        
+   
+    </div>
+    
+    <div class="footer-container">
+        <div class="footer">
+            <div class="column">
+            <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+                <div class="footer-logo">
+                    <img src="images/home/happie_logo_white.png" alt="Happie Logo">
+                </div>
+                <div class="footer-slogan">
+                    <p>Receive timely deals and promotions!</p>
+                </div>
+                <div class="email-subscription">
+                    <input type="email" required placeholder="Email">
+                    <button >Subscribe</button>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/happie.sg"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@happie.sg"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/happie.sg/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                    <!-- 2nd Column - About Us and Links -->
+                <h2>About Us</h2>
+                <ul class="footer-nav">
+                    <li><a href="aboutus.html">Our Story</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="column">
+            <!-- 3rd Column - Support and Links -->
+                <h2>Support</h2>
+                <ul class="footer-nav">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="warranty.html">Warranty</a></li>
+                    <li><a href="pdpa.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- 4th Column - Contact Us -->
+                <h2>Contact Us</h2>
+                <a  class="footer-address" href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6">
+                    7030 Ang Mo Kio Avenue 5, <br>
+                    #03-55, Singapore 569880
+                </a>
+                <p>Daily 10:00 am - 6:00 pm</p>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+        </div>    
+    </div>
+
+    
+    
+</body>
+</html>
+
+<script>
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }   else {
+            entry.target.classList.remove('visible');
+        }
+        });
+    }
+
+    // Target the fading div
+    const productdimension = document.querySelector('.productdimension');
+
+    const ambienceDetector = document.getElementById('ambiencedetector');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
+
+    // Observe the 'ambienceDetector' element
+    observer.observe(productdimension);
+    observer.observe(ambienceDetector);
+</script>

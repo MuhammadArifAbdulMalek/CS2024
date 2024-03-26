@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Cart - happie Water Dispenser</title>
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .cart-container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 30px 20px;
+      }
+
+      .cart-container h1 {
+        font-size: 4.5vw;
+        color: var(--grey);
+        text-align: center;
+        margin: 12vh 0px 20px 0px;
+      }
+
+      .cart-item {
+        display: flex;
+        height: 35vh;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .cart-item img {
+        width: auto;
+        height: 100%;
+        margin-right: 20px;
+        border-radius: 300px;
+      }
+
+      .cart-item-details {
+        flex-grow: 1;
+      }
+
+      .cart-item-details h3 {
+        margin: 0;
+        font-size: 2.2vw;
+        padding: 0px 0px 5px 0px;
+        color: var(--grey);
+      }
+
+      .cart-item-details p {
+        margin: 0;
+        font-size: 1.2vw;
+      }
+
+      .cart-summary button {
+        padding: 10px 10px;
+        margin: 0px;
+        width: 12vw;
+        box-sizing: border-box;
+        border: var(--grey) 1px solid;
+        background-color: transparent;
+        color: var(--grey);
+        text-align: center;
+        font-size: 1.3vw;
+        border-radius: 30px;
+        cursor: pointer;
+      }
+
+      .cart-summary button:hover {
+        color: var(--blue);
+      }
+
+      .cart-summary {
+        text-align: right;
+      }
+
+      .cart-summary p {
+        font-size: 1.2vw;
+      }
+
+      @media (max-width: 768px) {
+        .cart-item {
+          flex-direction: column;
+        }
+
+        .cart-item img {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+
+        .cart-container h1 {
+          font-size: 40px;
+          color: var(--grey);
+          text-align: center;
+        }
+
+        .cart-summary {
+          margin-top: 20px;
+        }
+
+        .cart-summary p {
+          font-size: 14px;
+        }
+
+        .cart-summary button {
+          padding: 10px 10px;
+          margin: 0px;
+          width: 130px;
+          box-sizing: border-box;
+          border: var(--grey) 1px solid;
+          background-color: transparent;
+          color: var(--grey);
+          text-align: center;
+          font-size: 15px;
+          border-radius: 30px;
+          cursor: pointer;
+        }
+
+        .cart-summary button:hover {
+          color: var(--blue);
+        }
+
+        .cart-item-details h3 {
+          margin: 0;
+          font-size: 20px;
+          padding: 0px 0px 5px 0px;
+          color: var(--grey);
+        }
+
+        .cart-item-details p {
+          margin: 0;
+          font-size: 14px;
+        }
+
+        .cart-item {
+          display: flex;
+          height: 35vh;
+          margin: 60px 0px 90px 0px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+    </script>
+
+    <div class="cart-nav-div">
+      <div class="home-top-2">
+        <div class="banner-dark">
+          <p>
+            [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+            Discounts
+          </p>
+        </div>
+        <div class="nav-blue">
+          <ul class="nav-pages">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-logo">
+              <a href="index.html"
+                ><img
+                  src="images/home/happie_logo_blue.png"
+                  alt="Happie Logo Blue"
+              /></a>
+            </li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul class="subpages">
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul class="subpages">
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-container">
+          <div class="nav-hamburger">
+            <div class="nav-menu">
+              <img src="images/home/home_menu.png" alt="menu logo" />
+              <a class="nav-logo" href="index.html"
+                ><img
+                  src="images/home/happie_logo_blue.png"
+                  alt="Happie Logo Blue"
+              /></a>
+            </div>
+          </div>
+          <ul class="nav-expand">
+            <img
+              class="close-nav"
+              src="images/home/home_menu_close.png"
+              alt="menu close logo"
+            />
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul>
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <h1>Cart Summary</h1>
+      <div class="cart-item">
+        <img src="images/home/home-delight.png" alt="Delight Water Dispenser" />
+        <div class="cart-item-details">
+          <h3>Delight Water Dispenser</h3>
+          <p>Price: $1288.00</p>
+          <p>Quantity: 1</p>
+        </div>
+      </div>
+
+      <div class="cart-item">
+        <img
+          src="images/home/home_happie_oppa.png"
+          alt="Happie Water Dispenser"
+        />
+        <div class="cart-item-details">
+          <h3>Joy Water Dispenser</h3>
+          <p>Price: $888.00</p>
+          <p>Quantity: 1</p>
+        </div>
+      </div>
+
+      <div class="cart-summary">
+        <p>Total: $2376.00</p>
+        <button>Checkout</button>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="Happie Logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

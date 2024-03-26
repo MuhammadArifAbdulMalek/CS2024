@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services and Installation - happie Water Dispenser</title>
+    <meta
+      name="description"
+      content="We value customer service and care for your purchasing experience. Find out how we have your purchase all covered."
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <style>
+      .services-title {
+        text-align: left;
+        padding-left: 100px;
+        margin: 10px 0px;
+      }
+
+      .services-title h2 {
+        color: var(--grey);
+        font-size: 4vw;
+        align-self: center;
+      }
+
+      .services-body {
+        padding: 0px 100px;
+      }
+
+      .services-body p {
+        font-size: 1.6vw;
+      }
+
+      .services-container {
+        display: block;
+        flex-direction: column;
+        position: relative;
+        height: 400px; /* Fixed height for the container */
+
+        justify-content: center;
+      }
+
+      .services-circle {
+        width: 350px; /* Adjust the size of the circle */
+        height: 350px; /* Adjust the size of the circle */
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        margin-left: 100px;
+      }
+
+      .services-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .services-rectangle {
+        width: 65%; /* Adjust the size of the rectangle */
+        height: 250px; /* Adjust the size of the rectangle */
+        position: absolute;
+        top: 60%;
+        left: 20%; /* Center horizontally */
+        display: flex;
+        text-align: left;
+        justify-content: center;
+        color: var(--grey); /* Text color inside the rectangle */
+        border: 1px solid black;
+        border-radius: 20px;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 0px 20px 0px 270px;
+      }
+
+      .services-rectangle p {
+        padding-right: 60px;
+        margin: 0; /* Remove default paragraph margin */
+        font-size: 1.6vw;
+      }
+
+      .services-video-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;
+      }
+
+      .services-video {
+        width: 1000px;
+        height: 650px;
+      }
+
+      .services-video iframe {
+        width: 100%;
+        height: 100%;
+      }
+
+      .services-container2 {
+        display: none;
+      }
+
+      .services-enquiry {
+        padding: 130px 0px 20px 0px;
+      }
+
+      .services-strong {
+        font-size: 2.5vw;
+        color: var(--grey);
+      }
+
+      @media (max-width: 900px) {
+        .services-container2 {
+          display: block;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .services-container {
+          display: none;
+        }
+
+        .services-container2 h2 {
+          color: var(--grey);
+          font-size: 35px;
+        }
+        .services-circle2 img {
+          height: 250px;
+          width: 250px;
+        }
+
+        .services-circle2 {
+          padding-bottom: 20px;
+          padding-top: 20px;
+        }
+
+        .services-rectangle2 {
+          color: var(--grey);
+          width: 70vw;
+          text-align: center;
+          border: 1px solid black;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding: 0px 5vw;
+        }
+
+        .services-rectangle2 p {
+          padding: 10px;
+          font-size: 16px;
+        }
+
+        .services-enquiry {
+          padding: 0px;
+        }
+
+        .services-body p {
+          font-size: 16px;
+        }
+        .services-strong {
+          font-size: 20px;
+        }
+        .services-title h2 {
+          font-size: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+
+      //pdpa scripts
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqContainers = document.getElementsByClassName("faq-container");
+
+        for (let i = 0; i < faqContainers.length; i++) {
+          faqContainers[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+
+    <div class="home-top">
+      <img
+        class="background"
+        src="images/Services/services_banner.png"
+        alt="Happie Services"
+      />
+      <div class="banner">
+        <p>
+          [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+          Discounts
+        </p>
+      </div>
+      <div class="nav-light">
+        <ul class="nav-pages">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-logo">
+            <a href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+            /></a>
+          </li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul class="subpages">
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul class="subpages">
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="subpage-header">
+        <h1>Our Services</h1>
+        <p>
+          Bringing you our exceptional services, ensuring every drop you drink
+          is a taste of joy and well-being.
+        </p>
+      </div>
+
+      <div class="nav-container">
+        <div class="nav-hamburger">
+          <div class="nav-menu">
+            <img src="images/home/home_menu.png" alt="menu logo" />
+            <a class="nav-logo" href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="happie Logo"
+            /></a>
+          </div>
+        </div>
+        <ul class="nav-expand">
+          <img
+            class="close-nav"
+            src="images/home/home_menu_close.png"
+            alt="menu close logo"
+          />
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul>
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="services-title">
+      <h2>Our Assurance for your Installation</h2>
+    </div>
+
+    <div class="services-body">
+      <p><strong class="services-strong">Optimised for your Needs</strong></p>
+      <p>
+        There is no one-size-fits-all for your interior. Our team will ensure a
+        seamless integration with proper assessment of your home interior and
+        your lifestyle.
+      </p>
+      <p><strong class="services-strong">Ready for Improvements</strong></p>
+      <p>
+        We understand the hassle of installations - the cleanups after and the
+        need for maintenance. Our team prioritises minimal disturbances to your
+        home. With the first step done right, filter changes or upgrading of
+        models will be hassle-free.
+      </p>
+      <p><strong class="services-strong">Catered to your Schedule</strong></p>
+      <p>
+        Offering comprehensive time-slots everyday of the week and short
+        installation processes, our experienced team will get the job done
+        before you reach out for another cup of water.
+      </p>
+    </div>
+
+    <div class="services-video-container" data-aos="fade-in">
+      <iframe
+        class="services-video"
+        width="800"
+        height="500"
+        src="https://www.youtube.com/embed/gyGfbBmu8fg"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="services-container">
+      <div class="services-title">
+        <h2>Meet Our Experts</h2>
+      </div>
+      <div class="services-rectangle">
+        <p class="services-rectangle-strong">
+          <strong style="font-size: 1.9vw">Product Specialist</strong>
+        </p>
+        <p class="services-rectangle-desc">
+          With a clear understanding of product features, they will recommend
+          the best product for you after observing your living space and habits.
+        </p>
+      </div>
+      <div class="services-circle">
+        <img
+          src="images/Services/services_worker1.png"
+          data-aos="zoom-in"
+          alt="Happie Staff Circular Photo"
+        />
+      </div>
+    </div>
+
+    <div class="services-container">
+      <div class="services-rectangle">
+        <p class="services-rectangle-strong">
+          <strong style="font-size: 1.9vw">Product Technicians</strong>
+        </p>
+        <p class="services-rectangle-desc">
+          With their technical experience, they will ensure a perfect
+          installation process, decreasing your worries of water leakages or
+          defects.
+        </p>
+      </div>
+      <div class="services-circle">
+        <img
+          src="images/Services/services_worker2.png"
+          data-aos="zoom-in"
+          alt="Happie Staff 2 Circular Photo"
+        />
+      </div>
+    </div>
+
+    <div class="services-container2">
+      <div class="services-title2">
+        <h2>Meet Our Experts</h2>
+      </div>
+      <div class="services-circle2">
+        <img
+          src="images/Services/services_worker1.png"
+          data-aos="zoom-in"
+          alt="Happie Staff Circular Photo"
+        />
+      </div>
+      <div class="services-rectangle2">
+        <p><strong style="font-size: 22px">Product Specialist</strong></p>
+        <p>
+          With a clear understanding of product features, they will recommend
+          the best product for you after observing your living space and habits.
+        </p>
+      </div>
+      <div class="services-circle2">
+        <img
+          src="images/Services/services_worker2.png"
+          data-aos="zoom-in"
+          alt="Happie Staff 2 Circular Photo"
+        />
+      </div>
+      <div class="services-rectangle2">
+        <p><strong style="font-size: 22px">Product Technicians</strong></p>
+        <p>
+          With their technical experience, they will ensure a perfect
+          installation process, decreasing your worries of water leakages or
+          defects.
+        </p>
+      </div>
+    </div>
+
+    <div class="services-enquiry">
+      <div class="enquiry-heading">
+        <h1>
+          <span style="color: #0ba1d5">happie</span>
+          <span style="color: #505251"
+            >Helpdesk: <br />
+            Your Queries, Our Priority!
+          </span>
+        </h1>
+      </div>
+      <div class="enquirymain">
+        <div class="enquirycolumn">
+          <table class="enquiry">
+            <tbody>
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/phone.png"
+                    alt="Contact Happie Phone"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="tel:+6588843083">+65 8884 3083</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/email.png"
+                    alt="Contact Happie Email"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img src="images/Enquiry/location.png" alt="Find Happie" />
+                </td>
+                <td class="enquiry-details-map">
+                  <p>Happie Experiential Showroom Northstar @ AMK <br /></p>
+                  <p>7030 Ang Mo Kio Avenue 5, #03-55 <br /></p>
+                  <p>Singapore 569880</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg"
+                    width="500vw"
+                    height="290vh"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="enquirycolumn">
+          <form action="submit.php" method="post" class="enquiryform">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required /> <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" required /> <br />
+            <label for="message">Message:</label> <br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input
+              type="submit"
+              id="enquirysubmit"
+              value="Send Us a Message!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="happie logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Our FAQ - happie Water Dispenser</title>
+    <meta
+      name="description"
+      content="Here is what we think you will want to know about us before entrusting us to be the source of your drinking water."
+    />
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      .faq-header h1 {
+        padding: 0px;
+        margin: 0px;
+        color: grey;
+      }
+
+      .faq {
+        padding: 20px 150px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .faq h1 {
+        color: var(--grey);
+        font-size: 2.5vw;
+      }
+
+      .faq-header {
+        margin-top: 130px;
+        text-align: center;
+      }
+      .faq-header h1 {
+        font-size: 4vw;
+      }
+
+      .faq-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0px;
+      }
+
+      .faq-label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: auto;
+        padding: 20px 0px;
+        border: 1px solid black;
+        border-width: 0px 0px 1px 0px;
+        cursor: pointer;
+        font-size: 1.7vw;
+      }
+
+      .faq-label p {
+        margin-left: auto;
+      }
+
+      .faq-label::before {
+        right: 170px;
+      }
+
+      .faq-container .faq-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease-in-out;
+        font-size: 1.3vw;
+        padding-top: 20px;
+      }
+
+      .faq-container.active .faq-content {
+        max-height: 900px;
+      }
+
+      @media (max-width: 767px) {
+        .faq-label {
+          font-size: 20px; /* Adjust font size for smaller screens */
+        }
+
+        .faq-label::before {
+          position: fixed;
+          right: 100px;
+        }
+
+        .faq-container.active .faq-content {
+          max-height: 800px; /* Adjust max-height for smaller screens */
+          font-size: 16px;
+        }
+
+        .faq-container .faq-content {
+          font-size: 16px;
+        }
+
+        .faq-header h1 {
+          font-size: 35px;
+        }
+
+        .faq h1 {
+          font-size: 25px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+
+      //faq scripts
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqContainers = document.getElementsByClassName("faq-container");
+
+        for (let i = 0; i < faqContainers.length; i++) {
+          faqContainers[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+    <div class="faq-top">
+      <div class="home-top-2">
+        <div class="banner-dark">
+          <p>
+            [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+            Discounts
+          </p>
+        </div>
+        <div class="nav-blue">
+          <ul class="nav-pages">
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-logo">
+              <a href="index.html"
+                ><img
+                  src="images/home/happie_logo_blue.png"
+                  alt="Happie Logo Blue"
+              /></a>
+            </li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul class="subpages">
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul class="subpages">
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="nav-container">
+          <div class="nav-hamburger">
+            <div class="nav-menu">
+              <img src="images/home/home_menu.png" alt="menu logo" />
+              <a class="nav-logo" href="index.html"
+                ><img
+                  src="images/home/happie_logo_blue.png"
+                  alt="Happie Logo Blue"
+              /></a>
+            </div>
+          </div>
+          <ul class="nav-expand">
+            <img
+              class="close-nav"
+              src="images/home/home_menu_close.png"
+              alt="menu close logo"
+            />
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li class="nav-subpage">
+              <a>Promotions</a>
+              <ul>
+                <li><a href="groupbuy.html">Group Buy</a></li>
+                <li><a href="referral.html">Referral Program</a></li>
+              </ul>
+            </li>
+            <li class="nav-subpage">
+              <a href="service.html">Services</a>
+              <ul>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="warranty.html">Warranty</a></li>
+              </ul>
+            </li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-header">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div class="faq">
+      <h1>Product</h1>
+      <div class="faq-container">
+        <div class="faq-label">
+          What makes happie different from other brands?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            There are many exclusive happie features that you can view in depth
+            in our products page. To name our signature features, we have:
+            <br /><br />
+
+            Fast Flow Rate <br />
+            Our dispensers ensure that minimal time is spent on waiting for your
+            cup of water with our fast water dispensing rate. Without
+            compromising on safety and the size of the dispenser, water is
+            delivered in a shorter amount of time. <br /><br />
+
+            Antibiotic Resin Coating<br />
+            Instead of normal plastic materials, we ensure your wellbeing even
+            on the surface of our dispenser. You can feel at ease while having a
+            more premium look to your dispenser.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          Do I need to turn off the electricity?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            No, there is no need to do so. <br /><br />
+
+            With our smart eco-system, we will conserve electricity even when
+            the dispenser is not in use, saving the earth and your wallet.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          Where can I view the water dispensers?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            You can choose to come down to our showroom to view our products.
+            <br /><br />
+
+            No appointment is needed, just come at your convenience and we will
+            be ready to serve.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          How much is the water filter?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            The price varies for each model, but we strive to strike a balance
+            between affordability and performance. <br /><br />
+
+            You can view the individual prices of the filters here. Stay tuned
+            for promotions that we will have by signing up with us.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h1>Delivery and Installation</h1>
+      <div class="faq-container">
+        <div class="faq-label">
+          How long does delivery take?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            We will deliver and install your products within 7 working days.
+            <br /><br />
+
+            Installation takes 30 - 40 minutes and you may contact us to
+            schedule a suitable timing for us to come down.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          How do I ensure that the water dispenser will fit my kitchen?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            We provide the dimensions in our product description for you to
+            check beforehand. <br /><br />
+
+            Otherwise, our experienced product technicians will be able to find
+            a spot with the required water source in your home.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          Can I install this in my office?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            Of course. <br /><br />
+
+            We have a model, Delight, recommended for commercial use. Click here
+            to view more details.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          How long can I have the installation put on hold after purchasing?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            We have no policies regarding this. <br /><br />
+
+            You can purchase at any time to secure our good deals and arrange an
+            installation with us when your space is ready.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq">
+      <h1>Maintenance and Servicing</h1>
+      <div class="faq-container">
+        <div class="faq-label">
+          How long is the Warranty?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            Warranty is covered for 36 months from your purchase date for the
+            dispenser. After 36 months, fees are dependent on the exact parts
+            that has to be replaced. <br /><br />
+
+            Click here for more details, and explore the option to upgrade to a
+            lifetime warranty.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          Do I need to do any maintenance and servicing?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            No action is required from you. <br /><br />
+
+            Leave it up to our experts to do the maintenance, all you have to do
+            is make a call to us.
+          </p>
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-label">
+          How often should I change my water filter?
+          <p>+</p>
+        </div>
+        <div class="faq-content">
+          <p>
+            This depends on your household size as well as your daily usage.<br /><br />
+
+            However, even with commercial use, one filter can last minimally 6
+            months, decreasing the need for frequent changes.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="enquiry-heading">
+        <h1>
+          <span style="color: #0ba1d5">happie</span>
+          <span style="color: #505251"
+            >Helpdesk: <br />
+            Your Queries, Our Priority!
+          </span>
+        </h1>
+      </div>
+      <div class="enquirymain">
+        <div class="enquirycolumn">
+          <table class="enquiry">
+            <tbody>
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/phone.png"
+                    alt="Contact Happie Phone"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="tel:+6588843083">+65 8884 3083</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/email.png"
+                    alt="Contact Happie Email"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img src="images/Enquiry/location.png" alt="Find Happie" />
+                </td>
+                <td class="enquiry-details-map">
+                  <p>Happie Experiential Showroom Northstar @ AMK <br /></p>
+                  <p>7030 Ang Mo Kio Avenue 5, #03-55 <br /></p>
+                  <p>Singapore 569880</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg"
+                    width="500vw"
+                    height="290vh"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="enquirycolumn">
+          <form action="submit.php" method="post" class="enquiryform">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required /> <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" required /> <br />
+            <label for="message">Message:</label> <br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input
+              type="submit"
+              id="enquirysubmit"
+              value="Send Us a Message!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="Happie Logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1090 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RD7LZYTHVP');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Delight Dispenser for your Office - happie Water Dispensers</title>
+    <meta name="description" content="Robust and solid, Delight can provide everyone with their water needs. Conserving energy without compromising sterilisation, choose Delight for your wellbeing." />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico">
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            font-size:8vh;
+            
+        }
+        .home-header p {
+            font-size:2.8vh;
+            color:white;
+            text-align: center;
+        }
+
+        .dispensermain{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding:5vw 0px;
+        }
+
+        .dispenserproducts{
+            position: relative;
+            width: 20vh;
+            height: 20vh;
+            display: none;
+            height:50vh;
+            width:50vh;
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-position: center center;
+        }
+
+        .dispenserproducts.visible {
+            display: block;
+            height:50vh;
+            width:50vh;
+            padding:0px 10vh 10vh 0px;
+            background-position: right;
+        
+        } 
+
+        .dispenserdetails p{
+            font-size: 1.5vw;
+            line-height: 2em;
+            color:#505251;
+            text-align: center;
+            
+        }
+
+        .productview{
+            flex: 1;
+        }
+
+
+        .productpurchase {
+            flex: 2;
+            margin-right: 10vw;
+            margin-left:10px;
+        }
+
+        .dispenserprice{
+            text-align: center;
+        }
+        .dispenserprice span{
+            font-size: 3.5vh;
+            padding:0px 10px;
+            font-weight: 400;
+        }
+
+        .difftemperature {
+            width: 40vw;
+        }
+
+        .difftemperature img{
+            width: 5vw;
+        }
+
+        .page{
+            width:100%;
+            min-height:auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        #ambieance
+
+        .pagewrapper {
+            margin: 0px 5% 0px 5%;
+            padding-top: 4vh;
+            height: auto;
+        }
+        .pagewrappercenter{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width:100%;
+            
+        }
+
+        .pagewrappercenter div,.pagewrappercenter p{
+            
+            padding-right:1.5vw;
+        }
+
+        .pagewrapper-product{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width:100%;
+            background-color: #818181;
+            
+        }
+
+        .pagesterilise{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 10vh 10vw;
+        }
+
+        .whydelight h1 {
+            padding: 50px;
+        }
+        
+
+        .whydelightcontainer {
+            text-align: center;
+            padding-bottom: 4vh;
+        }
+
+        .whydelightcontainer h1{
+           font-size: 7vh;
+        }
+        .delightdisplay{
+            background-image:url(images/Delight/DisplayReplica.png); 
+            background-repeat: no-repeat; 
+            background-size: 70% auto;            
+            justify-content: center;
+            align-items: center;
+           width:100%;
+            height:20vh;         
+            text-align: center;
+            background-position: center;
+            display: flex;
+            min-width: 630px;
+            
+        }
+        .displaycontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:70%;
+            min-width: 500px;
+        }
+        .displaybuttons{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            flex-direction: column;
+            filter: brightness(1) invert(0);
+            transition: filter  0.3s ease-in-out;
+            height:100%;
+            width:100%;
+        }
+
+        .displaybuttons img{
+            
+            height:auto;
+            width:3vw;
+        }
+
+        .displaybuttons a{
+            color: #505251;
+            font-size:1vw;
+
+        }
+
+        .displaybuttons:not(#lightsensor):hover{
+            filter: brightness(0) invert(1);
+        }
+
+        #lightsensor a{
+            color:black;
+        }
+
+        
+        .difftemperature {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 30vh;
+           
+        }
+
+        .temperaturecontainer {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-left:5vw;
+            padding-right:5vw;
+        }
+
+        .difftemperature p {
+            font-size:2.8vh;
+            font-weight: 600;
+        }
+
+        .UVsterilisecontainer{
+            width:80%
+        }
+
+        .UVsterilisecontainer p{
+           font-size:2vh;
+           font-weight:400;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%; /* You can adjust this based on your layout */
+            height: 0;
+            padding-bottom: 56.25%; /* This is for a 16:9 aspect ratio, adjust as needed */
+            overflow: hidden;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .steriliseimages {
+            display:flex;
+            max-width: 80vw;
+        }
+
+        .steriliseimages img{
+           flex:1;
+           margin-top: 20px;
+           width:10vw;
+           height:auto
+        }
+
+        #ambiencedetector {
+           
+            position:relative;
+            background-color: #F5F5F5;
+        }
+
+        
+
+        #ambiencedetector.visible{
+            animation: gradientAnimation 2s ease-in forwards ;
+            position:relative;
+            background-color: #F5F5F5;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: #F5F5F5;
+            }
+
+            
+            100% {
+                background:  #000000;
+            }
+        }
+
+        .dispensertext{
+            font-size:1.5vw;
+        }
+        #ambiencedetector img{
+            position:relative;
+            bottom:0px;
+           
+            height:50vh;
+            width:auto;
+            max-height: 40vh;
+            min-height:300px;
+            
+        }
+        .productdimension{
+            position:relative;
+            flex:3;
+            height:auto;
+        
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: opacity 0.3s, transform 3s;
+        }
+
+        .productdimension img {
+            width:41.5vh;
+            
+        }
+
+        .productdimension.visible {
+            position:relative;
+            flex:3;
+            height:auto;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .pagewrapper-product{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width:100%;
+            background-color: #818181;
+            
+        }
+
+        .productdimensiontitle{
+            flex:2;
+            padding-right:5vw;
+            text-align: right;
+            padding-left:5vw;
+        }
+
+        #oppaheight{
+            position:absolute;
+            top: 50%;
+            left: 0px;
+            transform: translate(0%, -50%);
+        }
+
+        #oppaproduct{
+            position:absolute;
+            top: 50%;
+            left: 150px;
+            transform: translate(0%, -50%);
+        }
+
+        #oppadepth{
+            position:absolute;
+            top: 120px;
+            left: 110px;
+            transform: translate(0%, 100%);
+        }
+
+        #oppawidth{
+            position:absolute;
+            top: 200px;
+            left: 350px;
+            transform: translate(0%, 100%);
+        }
+        #dispensemode{
+            height:auto;
+        }
+        .dispensedetails{
+            display: inline-block;
+            max-width: 75%;
+        }
+
+        .dispensevideocontainer{
+            padding:2vh 0 0 0;
+            display:flex;
+            justify-content: center;
+             align-items: center;
+             
+        }
+
+        .dispensevideocontainer video{
+            max-width: 80%;
+            max-height: 80%;
+            height:auto;
+            border-radius: 27px;
+            margin:10px 10px 10px 10px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .dispensedescription {
+            display: flex; 
+            flex-wrap: wrap; 
+            max-width: 100%;
+            padding-bottom:7vh;
+        }
+
+        .dispensedescription > div {
+            flex: 1;
+            box-sizing: border-box; 
+            text-align:center;
+        }
+
+        .dispensedescription p{
+            padding: 0 2vw 0 2vw; 
+        }
+
+        .name{
+            font-size:5vw;
+        }
+
+       #ambiancedemo {
+        height: 40vh;
+        width:auto;
+        max-height: 380px;
+       }
+       
+       .oppadescriptiontitle{
+        font-size: 4vh; 
+        font-weight:600;
+       }
+
+       .touchdesc{
+        color:#505251; 
+        font-size:3.5vh; 
+        line-height:1.7em;
+       }
+
+       @media (max-width: 1185px) {
+
+        .difftemperature img{
+            width:10vw;
+        }
+
+        .dispensedetails {
+            max-width:90%;
+        }
+        .dispenserdetails p{
+            font-size:16px;
+        }
+        .pagewrapper-product{
+            flex-direction: column;
+            height:140vh;
+        }
+        
+        .productdimensiontitle{
+            display:flex;
+            text-align: center;
+            padding-top: 10vh;
+        }
+        .productdimensiontitlename{
+            flex:1;
+        }
+        .productdimensiontitlename h1{
+            font-size: 8vh;
+            margin-bottom:0px;
+        }
+        
+        
+        
+        .productdimension{
+            display:block;
+            text-align: center;
+            position:relative;
+            width: 100%;
+            height: 200px;
+            padding-top:10px;
+        }
+
+        .productdimension.visible{
+            height:110vh;
+            display:block;
+            text-align: center;
+            width:100%;
+        }
+        
+        #oppaproduct{
+            height:50vh;
+        }
+        #oppaproduct{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+          
+        }
+
+        #ambiancedemo{
+            min-height:300px;
+        }
+
+        .delightdisplay{
+            background-size:540px auto;  
+        }
+
+        .displaycontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:540px;
+        }
+       }
+
+       @media (max-width: 980px) {
+
+        
+        
+
+        .dispensermain{
+            flex-direction: column;
+        }
+        .productview{
+            text-align: center;
+            padding:0;
+            margin:0;
+        }
+        #product1{
+            
+            height:30vh;
+        }
+
+        .dispenserproducts.visible, .dispensorproducts {
+            padding:0;
+            background-position: center;
+        }
+
+        .productpurchase{
+            padding:0;
+            margin-right:0px;
+        }
+
+        .dispenserdetails{
+            text-align: center;
+        }
+
+        
+       }
+       
+       @media (max-width: 880px) {
+        .dispenserproducts.visible {
+            display: block;
+            height: 50vh;
+        }
+
+        .pagewrapper{
+            margin:0px 5% 0px 5%;
+            padding-top:60px;
+            height:auto;
+        }
+
+        .touchdesc{
+            font-size: 3vh;
+        }
+        
+        
+        .pagewrappercenter div, .pagewrappercenter p {
+            padding-left:10px;
+
+       }
+
+       .subpage-header h1{
+                font-size:8vh;
+            }
+        .subpage-header p {
+            font-size:2.5vh;
+            text-align: center;
+        }
+
+        .page{
+            min-height:auto;
+        }
+
+        #ambiencedetector img{
+            position: relative;
+            left: auto;
+        }
+
+        .dispensertext{
+            font-size:2vw;
+            padding-bottom:5vh;
+        }
+       
+    }
+    @media (max-width: 767px) {
+        .name {
+            font-size: 40px;
+        }
+
+       .delightdisplay{
+            
+            min-width: auto;
+            background-size:80vw auto;  
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+        }
+
+        .displaycontainer{
+            max-width:80vw;
+            min-width:0;
+        }
+    }
+
+    @media (max-width:590px){
+        .oppadescriptiontitle{
+            font-size:4vw;
+        }
+    }
+
+    
+    </style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var navMenu = document.querySelector('.nav-menu');
+        var navHamburger = document.querySelector('.nav-hamburger');
+        var navExpand = document.querySelector('.nav-expand');
+        var closeIcon = document.querySelector('.close-nav');
+
+        navMenu.addEventListener('click', function() {
+            navExpand.style.display = 'block';
+            navHamburger.style.display = 'none';
+        });
+
+        closeIcon.addEventListener('click', function() {
+            navExpand.style.display = 'none'; 
+            navHamburger.style.display = 'block';
+        });
+    });
+</script>
+
+
+</head>
+<body>
+    
+    <div class="home-top">
+        
+            <img class="background" src="images/Delight/Heading.png" alt="Happie Delight Home">
+            <div class="banner">
+                <p>[Limited-time] Free 12-months Supply of Filter Sets + Up to 50% Discounts</p>
+            </div>
+            <div class="nav-light">
+                <ul class="nav-pages">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-logo"><a href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul class="subpages">
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul class="subpages">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="subpage-header">
+                <h1>DELIGHT</h1>
+                <p>Your choice for a steady and robust water source in your commercial space</p>
+                <a href="cart.html"><button class="filter-buynow-button" id="purchasebutton">Buy Now</button></a>
+            </div> 
+            
+
+            <div class="nav-container">
+                <div class="nav-hamburger">
+                    <div class="nav-menu">
+                        <img  src="images/home/home_menu.png" alt="menu logo">
+                        <a class="nav-logo" href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a>
+                    </div>
+                    
+                </div>
+                <ul class="nav-expand">
+                    <img class="close-nav" src="images/home/home_menu_close.png" alt="menu close logo">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul >
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul >
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="page" style="background-color: #ffffff;">
+        <div class="pagewrappercenter" id="delightmain">
+        <div class="dispensermain">
+            <div class="productview">
+                <div id="product1" class="dispenserproducts visible" style="background-image: url(images/Delight/happiedelight.png); background-repeat: no-repeat;">
+                   
+                </div>
+            
+                
+
+                
+            </div>
+            <div class="productpurchase">
+                <div style="text-align: center;">
+                    <h1><span class="name" style="color: #0BA1D5; ">DELIGHT</span><br> <span  style="color: #505251; font-size: 5.2vh;">Water Purifier </span><br>
+                </div>
+                <div class="dispenserdetails">
+                    <p >
+                        Introducing Happie’s Delight to you!
+Robust and prepared for heavy use, Delight is the perfect choice to elevate your commercial space. <br>Without compromising on water quality, Delight maintains a slim exterior to deliver clean water at your desired temperature 
+                    <br><b>*Includes 1 year FREE supply of filters and 36 months warranty</b>
+                    </p>
+                </div>
+                <div class="dispenserprice">
+                    <span style="color:#000000;"> <s> $1888</s> </span> <span style="color:#0BA1D5;"> $1288 </span>
+                </div>
+                <div style="text-align: center;">
+                    <form action="cart.html">
+                        <a href="cart.html"><button class="filter-buynow-button" id="productbutton">Buy Now</button></a>
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="page" style="background-color: #F5F5F5;">
+        <div class="pagewrapper">
+            <div class="whydelight">
+                <h1 style="margin-bottom:10px; color: #505251;">Why <span  style="color: #0BA1D5; ">DELIGHT </span>?</h1>
+            </div>
+            <div class="whydelightcontainer">
+                <div>
+                    <h1 style=" color:#505251;">All with a single touch.</h1>
+                </div>
+
+                <div class="delightdisplay">
+                    <div class="displaycontainer">
+                        <div class="displaybuttons" >
+                            <div>
+                                <img src="images/Delight/lock.png" alt="Happie Lock Display">
+                            </div>
+                            <a style="order:1">Lock</a>
+                        </div>
+                        <div class="displaybuttons">
+                            <div>
+                                <img src="images/Delight/WarmTouch.png" alt="Happie Warm Display">
+                            </div>
+                            <a>Hot</a>
+                        </div>
+                        <div class="displaybuttons">
+                            <div>
+                                <img src="images/Delight/AmbientTouch.png"  alt="Happie Ambient Display">
+                            </div>
+                            <a>Ambient</a>
+                        </div>
+                        <div class="displaybuttons">
+                            <div>
+                                <img src="images/Delight/ColdTouch.png"  alt="Happie Cold Display">
+                            </div>
+                            <a>Cold</a>
+                        </div>
+                        <div class="displaybuttons">
+                            <div>
+                                <img src="images/Delight/uvsteriliser.png"  alt="Happie UV Display">
+                            </div>
+                            <a>UV Steriliser</a>
+                        </div>
+                        <div class="displaybuttons" id="lightsensor">
+                            <div>
+                                <img src="images/Delight/lightsensor.png"  alt="Happie Light Sensor">
+                            </div>
+                            <a > Light </a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+                <div>
+                    <p  class ="touchdesc" >An easy touch experience to get the right mode. <br>
+                        All 
+                        within a single press on the display</p>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="page" style="background-color: #818181;" id="MultipleTemp">
+        <div class="pagewrappercenter">
+            <div style="text-align: center;">
+                <h1><span style="color: white;">Multiple temperatures. <br>
+                    For all types of drinks.</span> </h1>
+            </div>
+            <div class="difftemperature"> 
+                <div class="temperaturecontainer" id="hot">
+                    <div>
+                        <img src="images/Delight/warm.png"  alt="Happie Warm Display">   
+                    </div>
+                    <p> Hot</p>
+                </div>
+                <div class="temperaturecontainer" id="ambient">
+                    <div>
+                        <img src="images/Delight/normal.png"  alt="Happie Ambient Display">   
+                    </div>
+                    <p> Ambient</p>
+                </div>
+                <div class="temperaturecontainer" id="cold">
+                    <div>
+                        <img src="images/Delight/cold.png"  alt="Happie Cold Display">   
+                    </div>
+                    <p> Cold</p>
+                </div>
+            </div>
+            <div>
+                <p style="color:#ffffff; font-size: 2.5vw; text-align: center;"> Experience ice cold water & your ideal hot temperature with <br>
+                    Hot (95°C), Ambient (27°C) , Ice cold (4°C) </p>
+            </div>
+            
+        </div>
+    </div>
+    <div style=" background-color: #F5F5F5;">
+        <div class="pagesterilise">
+            <div class="UVsterilisecontainer">
+                <div>
+                    <h1><span  style="color: #505251 ;"> UV Sterilisation </span>
+                </div>
+                <div class ="video-container">
+                    <video controls autoplay loop>
+                        <source src="images/Delight/DelightUVSterilisation.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="steriliseimages" >
+                    <img src="images/Delight/sterilise1.png" style="padding-right:10px"  alt="Happie Sterilise Function">
+                    <img src="images/Delight/sterilise2.png" style="padding-left:10px"  alt="Happie Sterilise Function">
+                </div>
+                <p style="text-align: center;     font-size: 2vw; font-weight:500; padding-bottom:20px;">
+                    Effectively sterilises the harmful bacterias by using <br>low-level UV light diode sterilisation technology <span style="color:#0BA1D5; font-weight:800;">four times</span> a day.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" id="ambiencedetector" >
+        <div class="pagewrapper" style="text-align:center; padding-top: 10vh;">
+            <div style="z-index:2">
+                <h1><span style="color: #505251;">Ambiance detection </span><br>
+                    <span style="color: #ffffff;">Goes into</span> <span style="color: #0BA1D5;">Energy Saving</span> </h1>
+                    <p  class="dispensertext"> <span style="color: #ffffff; ">Delight is able to detect the brightness around the product and goes into energy saving mode </span> </p>
+            </div>
+            <img src ="images/Delight/Happie Delight.png" style="z-index: 1" id="ambiancedemo"  alt="Happie Delight">
+        </div>
+    </div>
+
+    <div class="page"  id="dispensemode" style="background-color: #F5F5F5;">
+        <div class="pagewrapper"  style="text-align:center;">
+            <div>
+                <h1><span style="color: #505251;">Hands free or not, </span>
+                    <span style="color: #0BA1D5;"> We got you</span> </h1>
+                    <p> <span style="color: #000000;" class="oppadescriptiontitle">Introducing 2 Hands-Free Dispensing Modes for Your Ease</span> </p>
+            </div>
+            <div class="dispensedetails">
+                <div class="dispensevideocontainer">
+                    <div style="flex:1">
+                        <video controls autoplay loop>
+                            <source src="images/Delight/Pushtodispense.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div style="flex:1">
+                        <video controls autoplay loop>
+                            <source src="images/Delight/Continuous.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    
+                </div>
+                <div class="dispensedescription" >
+                    <div>
+                        <p class="oppadescriptiontitle" > Push To Dispense  </p>
+                        <p  class="dispensertext" > Tired of holding your cup to wait for it fill? <br> Theres no need to be holding your cup. 
+                            Place your cup against the button and you can leave it to Delight to serve your beverage.</p>
+                    </div>
+                    <div> 
+                        <div>
+                        <p class="oppadescriptiontitle"  >Continuous</p>
+                        <p  class="dispensertext"> Tired of holding your cup to wait for it fill? <br>Theres no need to be holding your cup. 
+                            Place your cup against the button and you can leave it to Delight to serve your beverage.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <div class="pagewrapper-product" id="oppadimensions">
+        <div class="productdimensiontitle">
+            <div class="productdimensiontitlename">
+                <h1><span style="color: white; ">Slim. </span><br>
+                    <span style="color: black; ">Compact. </span> <br>
+                    <span style="color: white; ">Commercial  <br>
+                        Friendly. <br> </span>
+                </h1>
+            
+                <a href="cart.html"><button class="filter-buynow-button" id="purchasedimensionbutton">Buy Now</button></a>
+            </div>
+            
+        </div>
+        <div class="productdimension">
+            <img src="images/Delight/delightdimension.png" id="oppaproduct"  alt="Happie Delight">
+        </div>
+    </div>
+    
+        <div class="pagewrappercenter">
+            <div class="enquiry-div">
+                <div class="enquiry-heading">
+                    <h1><span style="color: #0BA1D5;">happie</span> <span  style="color: #505251;">Helpdesk: <br>
+                    Your Queries, Our Priority! </span></h1>
+                </div>
+                <div class="enquirymain">
+                    <div class="enquirycolumn">
+                        <table class="enquiry">
+                            <tbody>
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/phone.png" alt="Contact Happie Phone">
+                                    </td>
+                                    <td class="enquiry-details">
+                                        <a href="tel:+6588843083">+65 8884 3083</a>
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/email.png" alt="Contact Happie Email">
+                                    </td>
+                                    <td class="enquiry-details">
+                                        <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                                    </td>
+                                </tr>
+            
+                                <tr>
+                                    <td class="enquiry-icon">
+                                        <img src="images/Enquiry/location.png" alt="Find Happie">
+                                    </td>
+                                    <td class="enquiry-details-map">
+                                        <p>Happie Experiential Showroom Northstar @ AMK <br> </p>
+                                        <p>7030 Ang Mo Kio Avenue 5, #03-55 <br> </p>    
+                                        <p>Singapore 569880</p>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg" width="500vw" height="290vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="enquirycolumn">
+                        <form action="submit.php" method="post" class="enquiryform">
+                            <label for="name">Name:</label> <br>
+                            <input type="text" id="name" name="name" required> <br>
+                            <label for="email">Email:</label> <br>
+                            <input type="email" id="email" name="email" required> <br>
+                            <label for="message">Message:</label> <br>
+                            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                            <input type="submit" id="enquirysubmit" value="Send Us a Message!">
+                        </form>
+                    </div>
+                </div>
+                 </div>
+        
+   
+    </div>
+    
+    <div class="footer-container">
+        <div class="footer">
+            <div class="column">
+            <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+                <div class="footer-logo">
+                    <img src="images/home/happie_logo_white.png" alt="Logo">
+                </div>
+                <div class="footer-slogan">
+                    <p>Receive timely deals and promotions!</p>
+                </div>
+                <div class="email-subscription">
+                    <input type="email" required placeholder="Email">
+                    <button >Subscribe</button>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/happie.sg"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@happie.sg"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/happie.sg/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                    <!-- 2nd Column - About Us and Links -->
+                <h2>About Us</h2>
+                <ul class="footer-nav">
+                    <li><a href="aboutus.html">Our Story</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="column">
+            <!-- 3rd Column - Support and Links -->
+                <h2>Support</h2>
+                <ul class="footer-nav">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="warranty.html">Warranty</a></li>
+                    <li><a href="pdpa.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- 4th Column - Contact Us -->
+                <h2>Contact Us</h2>
+                <a  class="footer-address" href=https://maps.app.goo.gl/pqPb5U966YgCjN3t6">
+                    7030 Ang Mo Kio Avenue 5, <br>
+                    #03-55, Singapore 569880
+                </a>
+                <p>Daily 10:00 am - 6:00 pm</p>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+        </div>    
+    </div>
+    
+    
+</body>
+</html>
+
+<script>
+    // Function to handle the intersection observer callback
+    function handleIntersection(entries, observer) {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }   else {
+            entry.target.classList.remove('visible');
+        }
+        });
+    }
+
+    // Target the fading div
+    const productdimension = document.querySelector('.productdimension');
+
+    const ambienceDetector = document.getElementById('ambiencedetector');
+
+    // Create an Intersection Observer
+    const observer = new IntersectionObserver(handleIntersection, {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+    });
+
+    // Observe the 'ambienceDetector' element
+    observer.observe(productdimension);
+    observer.observe(ambienceDetector);
+</script>

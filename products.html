@@ -1,0 +1,460 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RD7LZYTHVP');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Our Water Dispensers and Filters - happie Water Dispenser</title>
+    <meta name="description" content="Explore our flagship products. Offering functionality and staying aesthetic, your hydration experience becomes premium with happie. Discover the perfect fit for your home or office. Visit our products page to find the ideal solution for your lifestyle.">
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+    body{
+        background-color: #F5F5F5;
+    }
+
+    .product.top{
+      position: relative;
+      width: 55vw;
+      height: 250px;
+      margin-top: 50px;
+      left: 10%;
+     
+   }
+   .product.bottom{
+      position: relative;
+      width:55vw;
+      height: 250px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      left: 30%;
+   }
+
+    .product.top { 
+      border-radius: 20px;
+      border: 1px solid #000000;
+    }
+
+    .product.bottom{
+        border-radius: 20px;
+      top: 20%;
+      background-color: #A3A3A3;
+    }
+
+    .circular-image {
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .circular-image.left {
+      top: 50%;
+      left: -7vw;
+      transform: translateY(-50%);
+    }
+
+    .circular-image.right {
+      top: 50%;
+      right: -7vw;
+      transform: translateY(-50%);
+    }
+
+    .circular-image img {
+      width:  100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-details{
+        color:black;
+        margin: auto; 
+        text-align: center;
+        display: inline-block;
+        padding: 0px 20px 20px 25vw;
+        height: 80%;
+    }
+
+    .product-details {
+        float: left;
+        
+    }
+
+    .product-details-2 {
+        color:rgb(255, 255, 255);
+        margin: auto; 
+        text-align: center;
+        display: inline-block;
+        padding: 0px 8vw 20px 50px;
+        width: 40%;
+        height: 80%;
+        box-sizing: border-box;
+    }
+
+    .product-details-2 {
+        float: left;
+        width: 70%;
+    }
+  
+
+    .product-details-header{
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+    .product-details-paragraph{
+        margin-top: 10;
+        margin-bottom: 10;
+        font-size: 20px;
+    }
+
+    .product-details-button {
+        border-radius: 30px; /* Adjust the value to control the roundness of the button */
+        background-color: var(--blue); /* Change the background color as needed */
+        color: white; /* Change the text color as needed */
+        padding: 10px 40px; /* Adjust padding for better visual appeal */
+        border: none; /* Remove default button border */
+        cursor: pointer;
+        margin:auto;
+        font-size: 1.5vw;
+    }
+
+    .product-details-button:hover {
+        color: var(--grey); 
+    }
+
+    .product-details-button2 {
+        border-radius: 30px; /* Adjust the value to control the roundness of the button */
+        background-color: var(--blue); /* Change the background color as needed */
+        color: white; /* Change the text color as needed */
+        padding: 10px 40px; /* Adjust padding for better visual appeal */
+        border: none; /* Remove default button border */
+        cursor: pointer;
+        margin:auto;
+        font-size: 1.5vw;
+    }
+
+    .product-details-button2:hover {
+        color: var(--grey);  /* Change the background color on hover as needed */
+    }
+
+    .product-bot {
+        margin: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .blue-text {
+        color: #0BA1D5; /* Blue color for the first word */
+    }
+
+    .black-text {
+        color: #000; /* Black color for the second word */
+    }
+
+    .product-bot a{
+        color: #626262;
+    }
+
+    .product-bot-button{
+        border-radius: 30px; /* Adjust the value to control the roundness of the button */
+        background-color: var(--blue); /* Change the background color as needed */
+        color: white; /* Change the text color as needed */
+        padding: 10px 40px; /* Adjust padding for better visual appeal */
+        cursor: pointer;
+        margin:auto;
+        font-size: 1.5vw;
+        border: none;
+    }
+
+    .product-bot-button:hover {
+        color: var(--grey);  /* Change the background color on hover as needed */
+    }
+
+    .product2 {
+        display:none;
+    }
+
+
+    @media (max-width: 900px) {
+        .product2 {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+
+        }
+        .product {
+            display: none;
+        }
+
+        .product2 h2 {
+            color: var(--grey);
+            font-weight: 600;
+            font-size: 35px;
+            margin: 0px;
+        }
+        .circular-image2 img {
+            height: 250px;
+            width: 250px;
+        }
+
+        .circular-image2 {
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+
+        .product-details2 {
+            color: var(--grey);
+            width: 70vw;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 30px 0px;
+        }
+
+        .product-details2 p {
+            padding: 10px 20px 20px 20px;
+            font-size: 16px;
+            margin: 0px;
+        }
+
+        .product-details-button2{
+            background-color: var(--blue);
+            font-size: 14px;
+        }
+
+        .product-details-button2:hover {
+            color: var(--grey);
+        }
+
+        .product-bot-button {
+            font-size: 14px;
+        }
+    
+    }
+
+    
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navMenu = document.querySelector('.nav-menu');
+            var navHamburger = document.querySelector('.nav-hamburger');
+            var navExpand = document.querySelector('.nav-expand');
+            var closeIcon = document.querySelector('.close-nav');
+
+            navMenu.addEventListener('click', function() {
+                navExpand.style.display = 'block';
+                navHamburger.style.display = 'none';
+            });
+
+            closeIcon.addEventListener('click', function() {
+                navExpand.style.display = 'none'; 
+                navHamburger.style.display = 'block';
+            });
+        });
+    </script>
+    <div class="home-top">
+        
+            <img class="background" src="images/product_page/header.jpg">
+            <div class="banner">
+                <p>[Limited-time] Free 12-months Supply of Filter Sets + Up to 50% Discounts</p>
+            </div>
+            <div class="nav-light">
+                <ul class="nav-pages">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-logo"><a href="index.html"><img src="images/home/happie_logo_white.png" alt="happie logo"></a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul class="subpages">
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul class="subpages">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="subpage-header">
+                <h1>Our Products</h1>
+            </div>
+
+
+            <div class="nav-container">
+                <div class="nav-hamburger">
+                    <div class="nav-menu">
+                        <img  src="images/home/home_menu.png" alt="menu logo">
+                        <a class="nav-logo" href="index.html"><img src="images/home/happie_logo_white.png" alt="happie logo"></a>
+                    </div>
+                    
+                </div>
+                <ul class="nav-expand">
+                    <img class="close-nav" src="images/home/home_menu_close.png" alt="menu close logo">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul >
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul >
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="product top" data-aos="fade-in">
+        <div class="circular-image left">
+            <img src="images/product_page/product2.png" alt="Circular Image 1">
+        </div>
+        <div class="product-details">
+            <h2 class="product-details-header">Delight</h2>
+            <p class="product-details-paragraph">Effortlessly incorporate Delight into your commercial space as your productivity companion</p>
+            <a href="delight.html"><button class="product-details-button" data-aos="zoom-in">Dive In</button></a>
+        </div>
+    </div>
+
+    <div class="product bottom" data-aos="fade-in">
+        <div class="circular-image right" >
+            <img src="images/product_page/product1.png" alt="Circular Image 2">
+        </div>
+        <div class="product-details-2">
+            <h2 class="product-details-header">Joy</h2>
+            <p class="product-details-paragraph">
+                Seamlessly integrate Joy into your homes as your new lifestyle companion
+            </p>
+            <a href="joy.html" data-aos="zoom-in"><button class="product-details-button2">Dive In</button></a>
+        </div>
+    </div>
+
+    
+    <div class="product2 top" data-aos="fade-in">
+        <div class="circular-image2 left">
+            <img src="images/product_page/product2.png" alt="Circular Image 1">
+        </div>
+        <div class="product-details2">
+            <h2>Delight</h2>
+            <p>Effortlessly incorporate Delight into your commercial space as your productivity companion</p>
+            <a href="delight.html" data-aos="zoom-in"><button class="product-details-button2">Dive In</button></a>
+        </div>
+    </div>
+
+    <div class="product2 bottom" data-aos="fade-in">
+        <div class="circular-image2 right" >
+            <img src="images/product_page/product1.png" alt="Circular Image 2">
+        </div>
+        <div class="product-details2">
+            <h2>Joy</h2>
+            <p>
+                Seamlessly integrate Joy into your homes as your new lifestyle companion
+            </p>
+            <a href="joy.html" data-aos="zoom-in"><button class="product-details-button2">Dive In</button></a>
+        </div>
+    </div>
+
+    <div class="product-bot" data-aos="fade-in">
+        <h2>Pair it with</h4>
+        <h1>
+            <span class="blue-text">Happie's</span>
+            <span class="black-text">Bliss</span>
+        </h1>
+        <a href="filter.html"><p>How Does It Work</p></a>
+        <img src="images/product_page/product_filter.png" alt="filter"/><br>
+        <a href="filter.html"><button class="product-bot-button" data-aos="fade-in">Order Now</button></a>
+    </div>
+    
+
+    <div class="footer-container">
+        <div class="footer">
+            <div class="column">
+            <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+                <div class="footer-logo">
+                    <img src="images/home/happie_logo_white.png" alt="happie logo">
+                </div>
+                <div class="footer-slogan">
+                    <p>Receive timely deals and promotions!</p>
+                </div>
+                <div class="email-subscription">
+                    <input type="email" required placeholder="Email">
+                    <button >Subscribe</button>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/happie.sg"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@happie.sg"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/happie.sg/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                    <!-- 2nd Column - About Us and Links -->
+                <h2>About Us</h2>
+                <ul class="footer-nav">
+                    <li><a href="aboutus.html">Our Story</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="column">
+            <!-- 3rd Column - Support and Links -->
+                <h2>Support</h2>
+                <ul class="footer-nav">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="warranty.html">Warranty</a></li>
+                    <li><a href="pdpa.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <!-- 4th Column - Contact Us -->
+                <h2>Contact Us</h2>
+                <a  class="footer-address" href="https://www.google.com/maps/place/Izakaya+Hikari/@1.3006168,103.8495272,17z/data=!3m1!5s0x31da18491d4e4013:0xfdf48049a5f02b65!4m10!1m2!2m1!1s190+middle+road+fortune+centre+%2303-01+Level+3,+Singapore+188979!3m6!1s0x31da19998c530cff:0x300217c977df6ad5!8m2!3d1.3005243!4d103.8521508!15sCj8xOTAgbWlkZGxlIHJvYWQgZm9ydHVuZSBjZW50cmUgIzAzLTAxIExldmVsIDMsIFNpbmdhcG9yZSAxODg5NzlaQCI-MTkwIG1pZGRsZSByb2FkIGZvcnR1bmUgY2VudHJlICMwMy0wMSBsZXZlbCAzIHNpbmdhcG9yZSAxODg5NzmSAQpyZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5wWDA0Mk4wbDNFQUXgAQA!16s%2Fg%2F11j275lfsl?entry=ttu">
+                    7030 Ang Mo Kio Avenue 5, <br>
+                    #03-55, Singapore 569880
+                </a>
+                <p>Daily 10:00 am - 6:00 pm</p>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+        </div>    
+    </div>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>      
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-RD7LZYTHVP");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Our Data Protection Policy - happie Water Dispenser</title>
+    <meta
+      name="description"
+      content="You value your privacy, and so do we. We treat your information with utmost care and adopt practices to keep you protected."
+    />
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      .pdpa {
+        padding: 20px 150px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      .pdpa-header {
+        margin-top: 130px;
+        text-align: center;
+      }
+
+      .pdpa-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0px;
+      }
+
+      .pdpa-label {
+        padding: 20px 0px;
+        border: 1px solid black;
+        border-width: 0px 0px 1px 0px;
+        cursor: pointer;
+        font-size: 1.8vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: auto;
+      }
+
+      .pdpa-label p {
+        margin-left: auto;
+      }
+
+      .pdpa-label::before {
+        right: 170px;
+      }
+
+      .pdpa-container .pdpa-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: 1s ease-in-out;
+        font-size: 1.3vw;
+        padding-top: 20px;
+      }
+
+      .pdpa-container.active .pdpa-content {
+        max-height: 800px;
+      }
+
+      @media (max-width: 1000px) {
+        .pdpa-label {
+          font-size: 20px; /* Adjust font size for smaller screens */
+        }
+
+        .pdpa-label::before {
+          right: 30px; /* Adjust position for smaller screens */
+        }
+
+        .pdpa-container.active .pdpa-content {
+          max-height: 1300px; /* Adjust max-height for smaller screens */
+          font-size: 16px;
+        }
+        .pdpa-container .pdpa-content {
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var navMenu = document.querySelector(".nav-menu");
+        var navHamburger = document.querySelector(".nav-hamburger");
+        var navExpand = document.querySelector(".nav-expand");
+        var closeIcon = document.querySelector(".close-nav");
+
+        navMenu.addEventListener("click", function () {
+          navExpand.style.display = "block";
+          navHamburger.style.display = "none";
+        });
+
+        closeIcon.addEventListener("click", function () {
+          navExpand.style.display = "none";
+          navHamburger.style.display = "block";
+        });
+      });
+
+      //pdpa scripts
+      document.addEventListener("DOMContentLoaded", function () {
+        const pdpaContainers =
+          document.getElementsByClassName("pdpa-container");
+
+        for (let i = 0; i < pdpaContainers.length; i++) {
+          pdpaContainers[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+
+    <div class="home-top">
+      <img
+        class="background"
+        src="images/PDPA/pdpa_banner.png"
+        alt="Happie PDPA"
+      />
+      <div class="banner">
+        <p>
+          [Limited-time] Free 12-months Supply of Filter Sets + Up to 50%
+          Discounts
+        </p>
+      </div>
+      <div class="nav-light">
+        <ul class="nav-pages">
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-logo">
+            <a href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+            /></a>
+          </li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul class="subpages">
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul class="subpages">
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="subpage-header">
+        <h1>Data Protection Policy</h1>
+        <p>
+          Your privacy matters, and happie respects that. We treat your personal
+          information with the utmost care and adopt strict practices to protect
+          your privacy.
+        </p>
+      </div>
+
+      <div class="nav-container">
+        <div class="nav-hamburger">
+          <div class="nav-menu">
+            <img src="images/home/home_menu.png" alt="menu logo" />
+            <a class="nav-logo" href="index.html"
+              ><img src="images/home/happie_logo_white.png" alt="Happie Logo"
+            /></a>
+          </div>
+        </div>
+        <ul class="nav-expand">
+          <img
+            class="close-nav"
+            src="images/home/home_menu_close.png"
+            alt="menu close logo"
+          />
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li class="nav-subpage">
+            <a>Promotions</a>
+            <ul>
+              <li><a href="groupbuy.html">Group Buy</a></li>
+              <li><a href="referral.html">Referral Program</a></li>
+            </ul>
+          </li>
+          <li class="nav-subpage">
+            <a href="service.html">Services</a>
+            <ul>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="warranty.html">Warranty</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pdpa">
+      <div class="pdpa-container">
+        <div class="pdpa-label">
+          Ways we collect your personal information
+          <p>+</p>
+        </div>
+        <div class="pdpa-content">
+          <p>We may collect your personal information when you:</p>
+
+          <ul>
+            <li>Subscribe to our newsletter</li>
+            <li>Register for an account with us</li>
+            <li>Purchase our products</li>
+            <li>Contact us with a question or request for assistance</li>
+            <li>
+              Visit our websites and applications (through the use of cookies /
+              mobile advertising IDs and other technologies)
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pdpa-container">
+        <div class="pdpa-label">
+          Information we collect
+          <p>+</p>
+        </div>
+        <div class="pdpa-content">
+          <ul>
+            <li>
+              Your identity – This includes NRIC, FIN or passport number,
+              address, telephone number, e-mail address, date of birth, any form
+              of biometric that you may have submitted, as well as
+              service-related information such as bank and credit card details,
+              device ID and IP address.
+            </li>
+            <li>
+              Your interaction with us – For example, a note or recording of a
+              call you make to one of our company, an email or letter you send
+              to us or other records of any contact you have with us.
+            </li>
+            <li>
+              Your account information – For example, the subscription services
+              you use or other details related to your account.
+            </li>
+            <li>
+              Information on your use of our services – For example, the
+              addresses that you install our dispensers.
+            </li>
+            <li>
+              Your preferences – This is based on what you share with us on how
+              you would like to be contacted, and your preferred products,
+              services and lifestyle activities for example.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pdpa-container">
+        <div class="pdpa-label">
+          How we use your information
+          <p>+</p>
+        </div>
+        <div class="pdpa-content">
+          <ul>
+            <li>Provisioning & administration of services</li>
+            <li>Market research, network & service enhancement</li>
+            <li>Sharing of rewards and benefits</li>
+            <li>Security and risk management</li>
+            <li>
+              Legal & regulatory requirements – Meet legal, regulatory and other
+              requirements including providing assistance to law enforcement,
+              judicial and other government agencies
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pdpa-container">
+        <div class="pdpa-label">
+          Sharing your information
+          <p>+</p>
+        </div>
+        <div class="pdpa-content">
+          <ul>
+            <li>Research institutions for market analysis purposes</li>
+            <li>
+              Business partners and vendors we work with to deliver services you
+              have subscribed to or to provide fraud or crime detection and
+              prevention services to us
+            </li>
+            <li>
+              Industry regulators and other government organisations, as
+              required by local laws and regulations
+            </li>
+            <li>
+              Financial institutions for purposes such as facilitating GIRO
+              payments
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pdpa-container">
+        <div class="pdpa-label">
+          Protecting your information
+          <p>+</p>
+        </div>
+        <div class="pdpa-content">
+          <p>
+            We have implemented stringent measures to secure and protect your
+            information. These include:
+          </p>
+          <ul>
+            <li>
+              Safeguards to prevent security breaches in our network and
+              database systems
+            </li>
+            <li>
+              Limits on access to information in our systems and the systems of
+              our business partners and vendors
+            </li>
+            <li>
+              Strict verification processes to prevent unauthorised access to
+              information
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="enquiry-heading">
+        <h1>
+          <span style="color: #0ba1d5">happie</span>
+          <span style="color: #505251"
+            >Helpdesk: <br />
+            Your Queries, Our Priority!
+          </span>
+        </h1>
+      </div>
+      <div class="enquirymain">
+        <div class="enquirycolumn">
+          <table class="enquiry">
+            <tbody>
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/phone.png"
+                    alt="Contact Happie Phone"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="tel:+6588843083">+65 8884 3083</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img
+                    src="images/Enquiry/email.png"
+                    alt="Contact Happie Email"
+                  />
+                </td>
+                <td class="enquiry-details">
+                  <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td class="enquiry-icon">
+                  <img src="images/Enquiry/location.png" alt="Find Happie" />
+                </td>
+                <td class="enquiry-details-map">
+                  <p>Happie Experiential Showroom Northstar @ AMK <br /></p>
+                  <p>7030 Ang Mo Kio Avenue 5, #03-55 <br /></p>
+                  <p>Singapore 569880</p>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg"
+                    width="500vw"
+                    height="290vh"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="enquirycolumn">
+          <form action="submit.php" method="post" class="enquiryform">
+            <label for="name">Name:</label> <br />
+            <input type="text" id="name" name="name" required /> <br />
+            <label for="email">Email:</label> <br />
+            <input type="email" id="email" name="email" required /> <br />
+            <label for="message">Message:</label> <br />
+            <textarea id="message" name="message" rows="4" cols="40"></textarea>
+            <input
+              type="submit"
+              id="enquirysubmit"
+              value="Send Us a Message!"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <div class="footer">
+        <div class="column">
+          <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+          <div class="footer-logo">
+            <img src="images/home/happie_logo_white.png" alt="Happie Logo" />
+          </div>
+          <div class="footer-slogan">
+            <p>Receive timely deals and promotions!</p>
+          </div>
+          <div class="email-subscription">
+            <input type="email" required placeholder="Email" />
+            <button>Subscribe</button>
+          </div>
+          <div class="social-media">
+            <a href="https://www.facebook.com/happie.sg"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="https://www.tiktok.com/@happie.sg"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <a href="https://www.instagram.com/happie.sg/"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"
+              ><i class="fab fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="column">
+          <!-- 2nd Column - About Us and Links -->
+          <h2>About Us</h2>
+          <ul class="footer-nav">
+            <li><a href="aboutus.html">Our Story</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 3rd Column - Support and Links -->
+          <h2>Support</h2>
+          <ul class="footer-nav">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="warranty.html">Warranty</a></li>
+            <li><a href="pdpa.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <!-- 4th Column - Contact Us -->
+          <h2>Contact Us</h2>
+          <a
+            class="footer-address"
+            href="https://maps.app.goo.gl/pqPb5U966YgCjN3t6"
+          >
+            7030 Ang Mo Kio Avenue 5, <br />
+            #03-55, Singapore 569880
+          </a>
+          <p>Daily 10:00 am - 6:00 pm</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RD7LZYTHVP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-RD7LZYTHVP');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Referral Programme - happie Water Dispenser</title>
+    <meta name="description" content="Share your happie experience! We are sure you had a pleasant experience with us, why not share it to your friends and family? Find out how you can save more with happie’s referral programme!">
+    <link rel="icon" type="image/x-icon" href="images/home/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        body{
+        background-color: #F5F5F5;
+        }
+
+        .referral{
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .blue-text {
+            color: #0BA1D5; /* Blue color for the first word */
+        }
+
+        .black-text {
+            color: #505251; /* Black color for the second word */
+        }
+
+        .referral h1 {
+            font-size: 3.5vw;
+        }
+
+        .enquiry-div {
+            background-color: #ffffff;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .enquiry-heading h1{
+            font-size:60px;
+            margin-top: 13vh;
+            margin-left: 9vw;
+
+        }
+
+        .referral-details {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .referral-left-column,
+        .referral-right-column {
+            flex: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center items horizontally */
+            justify-content: center; /* Center items vertically */
+        }
+
+        .referral-left-column::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-right: 2px solid #000; /* Add a border to create a vertical line */
+        }
+
+        /* Adjust padding and margin as needed */
+        .referral-left-column {
+            margin-right: 20px;
+            padding-right: 20px;
+        }
+
+        .referral-right-column {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 2.5vw
+        }
+
+        .referral-row {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            width: 60%;
+        }
+
+        .circle {
+            width: 10vw; /* Adjust the width as needed */
+            height: 10vw; /* Adjust the height as needed */
+            border-radius: 50%;
+            margin-right: 10px; /* Adjust the margin as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Style for Circle 1 */
+        .circle.circle-1 {
+            background-color: #F5F5F5; /* white background */
+            color: #0BA1D5; /* blue text */
+            border: 1px solid #0BA1D5
+        }
+
+        /* Style for Circle 2 */
+        .circle.circle-2 {
+            background-color: #0BA1D5; /* bluebackground */
+            color: #ffffff; /* white text */
+        }
+
+        /* Add more styles for additional circles */
+
+        .text-content {
+            margin-left: 10px; /* Adjust the margin as needed */
+        }
+
+        .text-content p {
+            text-align: left;
+            font-size: 1.8vw;
+        }
+
+    @media (max-width: 800px) {
+        .circle {
+            width: 150px; /* Adjust the width as needed */
+            height: 150px; /* Adjust the height as needed */
+            border-radius: 50%;
+            margin-right: 10px; /* Adjust the margin as needed */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .referral-details {
+            display: inline;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .referral-left-column::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            border-right: none; /* Add a border to create a vertical line */
+        }
+
+        .referral-left-column {
+            margin: auto;
+        }
+
+        .referral-right-column {
+            margin: auto;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 25px
+        }
+
+        .text-content p {
+            text-align: left;
+            font-size: 16px;
+        }
+
+        .referral h1 {
+            font-size: 30px;
+        }
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navMenu = document.querySelector('.nav-menu');
+            var navHamburger = document.querySelector('.nav-hamburger');
+            var navExpand = document.querySelector('.nav-expand');
+            var closeIcon = document.querySelector('.close-nav');
+
+            navMenu.addEventListener('click', function() {
+                navExpand.style.display = 'block';
+                navHamburger.style.display = 'none';
+            });
+
+            closeIcon.addEventListener('click', function() {
+                navExpand.style.display = 'none'; 
+                navHamburger.style.display = 'block';
+            });
+        });
+    </script>
+    <div class="home-top">
+        
+            <img class="background" style="opacity: 120%;" src="images/Referral/referral_head.jpg" alt="Happie Referral Programme">
+            <div class="banner">
+                <p>[Limited-time] Free 12-months Supply of Filter Sets + Up to 50% Discounts</p>
+            </div>
+            <div class="nav-light">
+                <ul class="nav-pages">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-logo"><a href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul class="subpages">
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul class="subpages">
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="subpage-header">
+                <h1>Referral Programmes</h1>
+                <p>Share your pleasant experience with your friends and family to unlock more benefits</p>
+            </div>
+
+            <div class="nav-container">
+                <div class="nav-hamburger">
+                    <div class="nav-menu">
+                        <img  src="images/home/home_menu.png" alt="menu logo">
+                        <a class="nav-logo" href="index.html"><img src="images/home/happie_logo_white.png" alt="Happie Logo"></a>
+                    </div>
+                    
+                </div>
+                <ul class="nav-expand">
+                    <img class="close-nav" src="images/home/home_menu_close.png" alt="menu close logo">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li class="nav-subpage">
+                        <a>Promotions</a>
+                        <ul >
+                            <li><a href="groupbuy.html">Group Buy</a></li>
+                            <li><a href="referral.html">Referral Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-subpage">
+                        <a href="service.html">Services</a>
+                        <ul >
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="warranty.html">Warranty</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="referral">
+        <h1>
+            Share the <span class="blue-text">happi</span>-ness
+        </h1>
+        <img src="images/Referral/ref_prod.png" alt="Happie Referral Products"  data-aos="zoom-in"/>
+        <h1  data-aos="slide-up">Invite your friends</h1>
+        <h5><i>Referral code: 1234</i></h5>
+        <div class="referral-details">
+            <div class="referral-left-column">
+                <h3>You get</h3>
+                <div class="referral-row">
+                    <div class="circle circle-1" data-text="Text1" data-aos="zoom-in">
+                        <p>10% off</p>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            <span class="black-text">Your next </span><br>
+                            <span class="blue-text">happie</span><br>
+                            <span class="black-text">purchase</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="referral-row">
+                    <div class="circle circle-2" data-text="Text1"  data-aos="zoom-in">
+                        <p>1 year</p>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            <span class="black-text"> extra supply </span><br>
+                            <span class="black-text">of filters</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="referral-right-column">
+                <h3>Your friend get</h3>
+                <div class="referral-row">
+                    <div class="circle circle-1" data-text="Text1"  data-aos="zoom-in">
+                        <p>15% off</p>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            <span class="black-text">Their first </span><br>
+                            <span class="blue-text">happie</span><br>
+                            <span class="black-text">purchase</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="referral-row">
+                    <div class="circle circle-2" data-text="Text1"  data-aos="zoom-in">
+                        <p>1 year</p>
+                    </div>
+                    <div class="text-content">
+                        <p>
+                            <span class="black-text"> extra supply </span><br>
+                            <span class="black-text">of filters</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="enquiry-div">
+        <div class="enquiry-heading">
+            <h1><span style="color: #0BA1D5;">happie</span> <span  style="color: #505251;">Helpdesk: <br>
+            Your Queries, Our Priority! </span></h1>
+        </div>
+        <div class="enquirymain">
+            <div class="enquirycolumn">
+                <table class="enquiry">
+                    <tbody>
+                        <tr>
+                            <td class="enquiry-icon">
+                                <img src="images/Enquiry/phone.png" alt="Contact Happie Phone">
+                            </td>
+                            <td class="enquiry-details">
+                                <a href="tel:+6588843083">+65 8884 3083</a>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="enquiry-icon">
+                                <img src="images/Enquiry/email.png" alt="Contact Happie Email">
+                            </td>
+                            <td class="enquiry-details">
+                                <a href="mailto:enquires@happie.sg">enquires@happie.sg</a>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td class="enquiry-icon">
+                                <img src="images/Enquiry/location.png" alt="Find Happie">
+                            </td>
+                            <td class="enquiry-details-map">
+                                <p>Happie Experiential Showroom Northstar @ AMK <br> </p>
+                                <p>7030 Ang Mo Kio Avenue 5, #03-55 <br> </p>    
+                                <p>Singapore 569880</p>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15954.662064499067!2d103.86211450365552!3d1.3773658346153883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da177e6b65447b%3A0xff94d7ef15dd63c7!2sHappie%3A%20Singapore%20Hot%20%26%20Cold%20Water%20Dispenser%20for%20Home%20%26%20Office%20%7C%20Water%20Purifier%20%7C%20Water%20Filter!5e0!3m2!1sen!2ssg!4v1698913140775!5m2!1sen!2ssg" width="500vw" height="290vh" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="enquirycolumn">
+                <form action="submit.php" method="post" class="enquiryform">
+                    <label for="name">Name:</label> <br>
+                    <input type="text" id="name" name="name" required> <br>
+                    <label for="email">Email:</label> <br>
+                    <input type="email" id="email" name="email" required> <br>
+                    <label for="message">Message:</label> <br>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                    <input type="submit" id="enquirysubmit" value="Send Us a Message!">
+                </form>
+            </div>
+        </div>
+         </div>
+
+         <div class="footer-container">
+            <div class="footer">
+                <div class="column">
+                <!-- 1st Column - Logo, Slogan, Email Subscription, Social Media -->
+                    <div class="footer-logo">
+                        <img src="images/home/happie_logo_white.png" alt="happie logo">
+                    </div>
+                    <div class="footer-slogan">
+                        <p>Receive timely deals and promotions!</p>
+                    </div>
+                    <div class="email-subscription">
+                        <input type="email" required placeholder="Email">
+                        <button >Subscribe</button>
+                    </div>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/happie.sg"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@happie.sg"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/happie.sg/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/channel/UCZ1FpRW4LQGiEcWsYQBmaHw/featured"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="column">
+                        <!-- 2nd Column - About Us and Links -->
+                    <h2>About Us</h2>
+                    <ul class="footer-nav">
+                        <li><a href="aboutus.html">Our Story</a></li>
+                        <li><a href="service.html">Services</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                <!-- 3rd Column - Support and Links -->
+                    <h2>Support</h2>
+                    <ul class="footer-nav">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="warranty.html">Warranty</a></li>
+                        <li><a href="pdpa.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <!-- 4th Column - Contact Us -->
+                    <h2>Contact Us</h2>
+                    <a  class="footer-address" href="https://www.google.com/maps/place/Izakaya+Hikari/@1.3006168,103.8495272,17z/data=!3m1!5s0x31da18491d4e4013:0xfdf48049a5f02b65!4m10!1m2!2m1!1s190+middle+road+fortune+centre+%2303-01+Level+3,+Singapore+188979!3m6!1s0x31da19998c530cff:0x300217c977df6ad5!8m2!3d1.3005243!4d103.8521508!15sCj8xOTAgbWlkZGxlIHJvYWQgZm9ydHVuZSBjZW50cmUgIzAzLTAxIExldmVsIDMsIFNpbmdhcG9yZSAxODg5NzlaQCI-MTkwIG1pZGRsZSByb2FkIGZvcnR1bmUgY2VudHJlICMwMy0wMSBsZXZlbCAzIHNpbmdhcG9yZSAxODg5NzmSAQpyZXN0YXVyYW50mgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU5wWDA0Mk4wbDNFQUXgAQA!16s%2Fg%2F11j275lfsl?entry=ttu">
+                        7030 Ang Mo Kio Avenue 5, <br>
+                        #03-55, Singapore 569880
+                    </a>
+                    <p>Daily 10:00 am - 6:00 pm</p>
+                </div>
+            </div> 
+            <div class="copyright">
+                <p>Copyright © 2023 Happie SG Pte Ltd . All Rights Reserved.</p>
+            </div>    
+        </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+      
+</body>
+</html>
